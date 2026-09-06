@@ -91,7 +91,34 @@ function renderGraph(){
   cy.on('tap','node',evt => window.open(repoBase + encodeURI(evt.target.data('path')), '_self'));
 }
 
+function setupNavigation(){
+  const toggle = document.querySelector('.toc-toggle');
+  const mobile = document.getElementById('mobile-toc');
+  if (toggle && mobile) {
+    toggle.addEventListener('click', () => {
+      const open = mobile.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    mobile.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      mobile.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }));
+  }
+
+  const sections = [...document.querySelectorAll('main > section[id]')];
+  const links = [...document.querySelectorAll('.toc-nav a[data-section]')];
+  if (!sections.length || !links.length) return;
+  const byId = new Map(links.map(link => [link.dataset.section, link]));
+  const activate = id => links.forEach(link => link.classList.toggle('active', link === byId.get(id)));
+  const observer = new IntersectionObserver(entries => {
+    const visible = entries.filter(e => e.isIntersecting).sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
+    if (visible) activate(visible.target.id);
+  }, {rootMargin:'-18% 0px -58% 0px', threshold:[0,.2,.5,.8]});
+  sections.forEach(section => observer.observe(section));
+}
+
 async function init(){
+  setupNavigation();
   try {
     await loadData();
     renderChapters(); renderTimeline(); renderSystems(); renderLegend(); renderGraph();
