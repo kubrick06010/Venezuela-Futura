@@ -8,6 +8,35 @@ Pregunta central:
 
 No partimos de que toda institución pasada fue ejemplar ni de que toda transformación posterior fue necesariamente decadencia.
 
+## Trayectorias ya estructuradas
+
+- [Malariología](trayectorias/malariologia.md)
+- [Instituto Nacional de Obras Sanitarias — INOS](trayectorias/inos.md)
+- [Instituto Venezolano de Investigaciones Científicas — IVIC](trayectorias/ivic.md)
+- [Corporación Venezolana de Guayana — CVG](trayectorias/cvg.md)
+- [EDELCA](trayectorias/edelca.md)
+- [Petróleos de Venezuela — PDVSA](trayectorias/pdvsa.md)
+- [Metro de Caracas](trayectorias/metro-de-caracas.md)
+- [COPRE](trayectorias/copre.md)
+
+Estas fichas son esqueletos de investigación. Su objetivo es volver visible la secuencia:
+
+```text
+problema
+↓
+nacimiento institucional
+↓
+capacidades acumuladas
+↓
+shocks y decisiones
+↓
+transformación / adaptación / deterioro
+↓
+qué sobrevivió
+↓
+estado actual
+```
+
 ## Plantilla de genealogía institucional
 
 ```text
@@ -77,23 +106,15 @@ resultado
 
 La misma amenaza externa puede producir resultados distintos según capacidades, reservas, cultura, reglas e incentivos previos.
 
-## Casos prioritarios
+## Casos prioritarios todavía por estructurar
 
-- Malariología / salud pública territorial;
-- CVG;
-- EDELCA;
 - Guri y sistema eléctrico interconectado;
 - OPSIS;
-- INOS;
 - HIDROVEN y descentralización de servicios de agua;
 - Banco Obrero;
-- Metro de Caracas;
-- IVIC;
 - CONICIT;
-- PDVSA;
 - Intevep;
 - Fundayacucho;
-- COPRE;
 - universidades públicas y autónomas;
 - El Sistema;
 - Cinemateca Nacional;
@@ -117,19 +138,8 @@ Rafael Alfonzo Ravard y la genealogía Caroní–CVG–EDELCA–Guri–PDVSA pla
 
 La historia institucional no puede limitarse a decretos y libros. Mucho conocimiento esencial es tácito y desaparece cuando se jubilan o emigran quienes operaron los sistemas.
 
-Debemos preservar historia oral de:
+Debemos preservar historia oral de ingenieros de EDELCA, operadores del Metro, técnicos de INOS, epidemiólogos y trabajadores de Malariología, urbanistas de CVG, científicos del IVIC e Intevep, maestros y formadores técnicos, trabajadores industriales, funcionarios de COPRE, guardaparques y gestores territoriales.
 
-- ingenieros de EDELCA;
-- operadores del Metro;
-- técnicos de INOS;
-- epidemiólogos y trabajadores de Malariología;
-- urbanistas de CVG;
-- científicos del IVIC e Intevep;
-- maestros y formadores técnicos;
-- trabajadores industriales;
-- funcionarios de COPRE;
-- guardaparques y gestores territoriales.
-
-La pregunta no es "¿antes éramos mejores?" sino:
+La pregunta no es «¿antes éramos mejores?» sino:
 
 > **¿Cómo funcionaba exactamente y qué conocimiento no deberíamos perder?**
