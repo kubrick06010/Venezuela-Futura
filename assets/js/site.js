@@ -14,7 +14,7 @@ const chapters = [
   {tag:'personas', title:'Capa humana 2025–2026', path:'08-estado-del-pais/capa-humana-2025-2026.md', text:'Demografía, pobreza, educación, trabajo, hogares, diáspora y comunidad humana venezolana.'},
   {tag:'material', title:'Capacidad material 2026', path:'08-estado-del-pais/capacidad-material-2026.md', text:'Infraestructura instalada, disponible, utilizada, recuperable o reemplazable.'},
   {tag:'servicios', title:'Sistemas esenciales', path:'08-estado-del-pais/sistemas-esenciales.md', text:'Agua, electricidad, saneamiento, resiliencia, continuidad, calidad y mantenimiento.'},
-  {tag:'fuentes', title:'Fuentes y predecesores', path:'sources/predecesores.md', text:'Proyectos, obras, hojas de ruta e instituciones que anteceden o alimentan Venezuela Futura.'}
+  {tag:'fuentes', title:'Fuentes y predecesores', path:'sources/predecessors.md', text:'Proyectos, obras, hojas de ruta e instituciones que anteceden o alimentan Venezuela Futura.'}
 ];
 
 const systems = [
