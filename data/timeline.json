@@ -1,0 +1,22 @@
+[
+  {"id":"event-1936-transicion","year":1936,"label":"Apertura posgomecista y reorganización estatal","type":"contexto","confidence":"documentada","related":["alberto-adriani","arturo-uslar-pietri","idea-sembrar-el-petroleo"]},
+  {"id":"event-1936-sembrar","year":1936,"label":"Uslar publica Sembrar el petróleo","type":"idea","confidence":"documentada","related":["arturo-uslar-pietri","idea-sembrar-el-petroleo"]},
+  {"id":"event-1958-transicion-democratica","year":1958,"label":"Fin de la dictadura, elecciones y acuerdos de gobernabilidad","type":"politica","confidence":"documentada","related":[]},
+  {"id":"event-1961-constitucion","year":1961,"label":"Constitución de 1961","type":"institucion","confidence":"documentada","related":[]},
+  {"id":"event-1960-opep","year":1960,"label":"Creación de la OPEP","type":"institucion","confidence":"documentada","related":["juan-pablo-perez-alfonzo"]},
+  {"id":"event-1963-debate-petroleo","year":1963,"label":"Debate petrolero Uslar–Pérez Alfonzo","type":"debate","confidence":"documentada","related":["arturo-uslar-pietri","juan-pablo-perez-alfonzo","debate-petroleo-1963"]},
+  {"id":"event-1976-nacionalizacion","year":1976,"label":"Nacionalización petrolera y nacimiento de PDVSA","type":"institucion","confidence":"documentada","related":["rafael-alfonzo-ravard"]},
+  {"id":"event-1976-rangel","year":1976,"label":"Rangel publica Del buen salvaje al buen revolucionario","type":"idea","confidence":"documentada","related":["carlos-rangel","debate-agencia-dependencia"]},
+  {"id":"event-1983-viernes-negro","year":1983,"label":"Viernes Negro","type":"economia","confidence":"documentada","related":["idea-capitalismo-rentistico"]},
+  {"id":"event-1984-montero","year":1984,"label":"Montero publica Ideología, alienación e identidad nacional","type":"idea","confidence":"documentada","related":["maritza-montero","idea-identidad-autopercepcion"]},
+  {"id":"event-1984-copre","year":1984,"label":"Creación de COPRE","type":"institucion","confidence":"documentada","related":[]},
+  {"id":"event-1987-disimulo","year":1987,"label":"Cabrujas formula El Estado del disimulo en Estado & Reforma","type":"idea","confidence":"documentada","related":["jose-ignacio-cabrujas","idea-estado-del-disimulo"]},
+  {"id":"event-1989-descentralizacion","year":1989,"label":"Elección directa de gobernadores y alcaldes y avance de la descentralización","type":"institucion","confidence":"documentada","related":[]},
+  {"id":"event-1989-caracazo","year":1989,"label":"Caracazo","type":"sociedad","confidence":"documentada","related":[]},
+  {"id":"event-1992-golpes","year":1992,"label":"Intentos de golpe de Estado","type":"politica","confidence":"documentada","related":[]},
+  {"id":"event-1995-estado-magico","year":1995,"label":"Coronil publica The Magical State","type":"idea","confidence":"documentada","related":["fernando-coronil","idea-estado-magico"]},
+  {"id":"event-1998-eleccion-chavez","year":1998,"label":"Elección de Hugo Chávez","type":"politica","confidence":"documentada","related":[]},
+  {"id":"event-1999-constitucion","year":1999,"label":"Constitución de 1999","type":"institucion","confidence":"documentada","related":[]},
+  {"id":"event-2014-2025-crisis-diaspora","start_year":2014,"end_year":2025,"label":"Contracción, transformación social y diáspora masiva","type":"periodo","confidence":"documentada","related":["08-estado-del-pais--capa-humana-2025-2026"]},
+  {"id":"event-2026-foto","year":2026,"label":"Estado del país: evidencia posterior","type":"evidencia","confidence":"documentada","related":["08-estado-del-pais--foto-2026","08-estado-del-pais--capa-humana-2025-2026","08-estado-del-pais--capacidad-material-2026"]}
+]
