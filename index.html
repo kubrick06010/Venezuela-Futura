@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Venezuela Futura</title>
+  <meta name="description" content="Atlas navegable de ideas, contexto, memoria y capacidades para pensar la Venezuela del futuro." />
+  <link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar">
+      <a class="brand" href="./">Venezuela Futura</a>
+      <a href="https://github.com/kubrick06010/Venezuela-Futura">GitHub</a>
+    </nav>
+    <section class="hero-grid">
+      <div>
+        <p class="eyebrow">Memoria conectiva · contexto · capacidades · futuro</p>
+        <h1>Un atlas abierto para pensar Venezuela a largo plazo.</h1>
+        <p class="lead">No es un programa de gobierno. Es una base navegable de conocimiento para entender el país, sus ideas, sus instituciones, su territorio y sus posibilidades.</p>
+      </div>
+      <aside class="principles">
+        <h2>Principios guía</h2>
+        <ul>
+          <li>Venezuela no es una empresa.</li>
+          <li>Conocer antes de transformar.</li>
+          <li>Construir incluye mantener.</li>
+          <li>Medir servicio, no existencia.</li>
+          <li>Agencia sin aislamiento.</li>
+        </ul>
+      </aside>
+    </section>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-title">
+        <p class="eyebrow">Explorar</p>
+        <h2>Capítulos del repositorio</h2>
+      </div>
+      <input id="search" class="search" type="search" placeholder="Buscar: petróleo, territorio, instituciones, Rangel, Guayana..." />
+      <div id="chapters" class="cards"></div>
+    </section>
+
+    <section class="section split">
+      <div>
+        <p class="eyebrow">Grafo inicial</p>
+        <h2>Ideas, personas e instituciones</h2>
+        <p>Este primer grafo es deliberadamente incompleto. Sirve para mostrar cómo el sitio puede pasar de una lista de documentos a una red navegable de relaciones.</p>
+        <div id="legend" class="legend"></div>
+      </div>
+      <div id="graph" class="graph" aria-label="Grafo de relaciones de Venezuela Futura"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <p class="eyebrow">Foto 2026</p>
+        <h2>Capacidad instalada, disponible y real</h2>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Sistema</th><th>Pregunta clave</th><th>Archivo</th></tr>
+          </thead>
+          <tbody id="systems"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Fuente de verdad: repositorio GitHub. La web es una forma de navegarlo.</p>
+  </footer>
+
+  <script src="https://unpkg.com/cytoscape@3.28.1/dist/cytoscape.min.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
