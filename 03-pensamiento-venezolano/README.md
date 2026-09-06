@@ -1,6 +1,27 @@
 # Pensamiento venezolano
 
-Este directorio no será un panteón de próceres intelectuales. La unidad principal de análisis deben ser **los debates**, las ideas, sus contextos, sus críticos y lo que ocurrió después.
+Este directorio no será un panteón de próóceres intelectuales. La unidad principal de análisis son **los debates**, las ideas, sus contextos, sus críticos, las instituciones que produjeron y lo que ocurrió después.
+
+## El grafo empieza aquí
+
+La primera migración estructurada ya vive en [`personas/`](personas/) y [`debates/`](debates/). Cada ficha tiene un ID estable y metadatos que GitHub Pages descubre automáticamente; las relaciones curadas viven en `data/relations.json` y distinguen relaciones documentadas, inferidas e interpretativas.
+
+Personas iniciales estructuradas:
+
+- [Alberto Adriani](personas/alberto-adriani.md)
+- [Arturo Uslar Pietri](personas/arturo-uslar-pietri.md)
+- [Juan Pablo Pérez Alfonzo](personas/juan-pablo-perez-alfonzo.md)
+- [Rafael Alfonzo Ravard](personas/rafael-alfonzo-ravard.md)
+- [Asdrúbal Baptista](personas/asdrubal-baptista.md)
+- [Carlos Rangel](personas/carlos-rangel.md)
+- [Manuel Caballero](personas/manuel-caballero.md)
+- [Maritza Montero](personas/maritza-montero.md)
+- [José Manuel Briceño Guerrero](personas/jose-manuel-briceno-guerrero.md)
+
+Debates iniciales:
+
+- [Uslar ↔ Pérez Alfonzo: debate petrolero de 1963](debates/petroleo/uslar-vs-perez-alfonzo-1963.md)
+- [Agencia interna ↔ condicionantes externos](debates/agencia-interna-vs-condicionantes-externos.md)
 
 ## Regla de trabajo
 
@@ -18,69 +39,41 @@ qué sabemos hoy
 qué sigue abierto
 ```
 
-## Personas y líneas iniciales
+## El objetivo no es una cronología lineal
 
-- **Alberto Adriani** — agricultura, productividad, diversificación, inmigración, política monetaria, población, formación técnica y economía internacional.
-- **Arturo Uslar Pietri** — petróleo y renta, educación, cultura, identidad y modernización; "Sembrar el petróleo" como nodo histórico que debe estudiarse con su genealogía y contexto.
-- **Juan Pablo Pérez Alfonzo** — política petrolera, OPEP, prudencia sobre renta agotable, desperdicio y generaciones futuras.
-- **Rafael Alfonzo Ravard** — construcción institucional, Caroní, CVG/EDELCA, Guri, Ciudad Guayana y PDVSA.
-- **Rómulo Betancourt** — democracia civil, partidos, petróleo, Fuerzas Armadas, Estado y política exterior.
-- **Ramón J. Velásquez** — memoria histórica e institucional.
-- **Germán Carrera Damas** — formación republicana, ciudadanía, historia y culto a Bolívar.
-- **Manuel Caballero** — cultura política, militarismo, izquierda, Chávez y crítica intelectual.
-- **Luis Castro Leiva** — republicanismo, ciudadanía, lenguaje político y distancia entre ideales constitucionales y práctica.
-- **Asdrúbal Baptista** — capitalismo rentístico, estructura económica y petróleo.
-- **D. F. Maza Zavala** — desarrollo, dependencia, distribución y economía petrolera.
-- **Carlos Rangel** — crítica a narrativas de victimización, romanticismo revolucionario y explicaciones exclusivamente externas.
-- **Gerver Torres** — reforma del Estado, gestión pública, transformación económica y desarrollo social.
-- **Allan R. Brewer-Carías** — derecho constitucional y administrativo, descentralización y municipios.
-- **Juan Carlos Rey** — sistema político, democracia y representación.
-- **Luis Beltrán Prieto Figueroa** — educación.
-- **Mariano Picón Salas** — cultura, educación, modernización y vida civil.
-- **Maritza Montero** — psicología social, identidad nacional, ciudadanía, participación, poder y comunidad.
-- **Miguel Acosta Saignes** — antropología, historia, pueblos indígenas, presencia africana y estructuras sociales.
-- **Esteban Emilio Mosonyi** — lenguas indígenas, educación intercultural, derechos y territorio.
-- **José Manuel Briceño Guerrero** — identidad latinoamericana, mestizaje y coexistencia conflictiva de discursos culturales.
-- **José Ignacio Cabrujas** — cultura política y distancia entre Estado formal y realidad vivida; "El Estado del disimulo" como nodo de estudio.
-
-Esta lista es incompleta por diseño. Debe ampliarse deliberadamente con mujeres, voces regionales, pensamiento indígena, trabajadores, científicos, educadores, ambientalistas, artistas y constructores institucionales.
-
-## Debates prioritarios
+Queremos reconstruir una red:
 
 ```text
-debates/
-├── petroleo/
-│   └── uslar-vs-perez-alfonzo-1963/
-├── por-que-fracasa-america-latina/
-│   ├── carlos-rangel/
-│   ├── manuel-caballero/
-│   ├── dependencia/
-│   └── evidencia-posterior/
-├── sembrar-el-petroleo/
-├── capitalismo-rentistico/
-├── centralizacion-vs-descentralizacion/
-├── estado-y-mercado/
-├── educacion-publica/
-└── propiedad-del-petroleo/
+IDEA
+ ↓
+PERSONA ↔ PERSONA
+ ↓       ↕
+DEBATE  CRÍTICA
+ ↓
+DECISIÓN
+ ↓
+INSTITUCIÓN
+ ↓
+CAPACIDAD
+ ↓
+RESULTADO
+ ↓
+EVIDENCIA POSTERIOR
+ ↓
+¿QUÉ APRENDIMOS?
 ```
 
-### Rangel y sus críticos
+Una arista del grafo no implica causalidad. Cuando una relación sea una lectura nuestra y no una relación histórica directamente documentada, debe decirlo.
 
-No queremos adoptar a Carlos Rangel como doctrina. Queremos conservar su pregunta por la agencia interna y confrontarla con quienes subrayan condicionantes históricos, geopolíticos y económicos externos.
+## Personas y líneas todavía por estructurar
 
-Preguntas gemelas:
+Rómulo Betancourt; Ramón J. Velásquez; Germán Carrera Damas; Luis Castro Leiva; D. F. Maza Zavala; Gerver Torres; Allan R. Brewer-Carías; Juan Carlos Rey; Luis Beltrán Prieto Figueroa; Mariano Picón Salas; Miguel Acosta Saignes; Esteban Emilio Mosonyi; José Ignacio Cabrujas, y muchas otras voces.
 
-> **¿Qué parte de nuestros problemas proviene de las circunstancias que hemos sufrido y qué parte proviene de decisiones, instituciones e ideas que nosotros mismos hemos producido?**
-
-> **¿Cuándo atribuir los problemas exclusivamente a nuestras decisiones internas nos hace ignorar condicionantes históricos, geopolíticos, económicos o distributivos reales?**
-
-Necesitamos a ambos argumentos dentro de la sala.
+La lista debe ampliarse deliberadamente con mujeres, voces regionales, pensamiento indígena, trabajadores, científicos, educadores, ambientalistas, artistas y constructores institucionales.
 
 ## Suma del pensar venezolano
 
-La colección **Suma del pensar venezolano**, de Fundación Empresas Polar, es un antecedente intelectual fundamental. Su trabajo reunió pensamiento venezolano sobre sociedad, cultura, política y economía mediante especialistas, textos históricos y diálogo entre épocas.
-
-Venezuela Futura no debería intentar reemplazarla. Puede añadir una capa propia de la era Git:
+La colección **Suma del pensar venezolano**, de Fundación Empresas Polar, es un antecedente intelectual fundamental. Venezuela Futura no pretende reemplazarla. Puede añadir una capa propia de la era Git:
 
 ```text
 pensamiento histórico
