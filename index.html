@@ -8,25 +8,23 @@
   <link rel="stylesheet" href="assets/css/site.css" />
 </head>
 <body>
-  <aside class="toc" aria-label="Tabla de contenidos">
-    <a class="toc-brand" href="#inicio" aria-label="Volver al inicio">VF</a>
-    <nav class="toc-nav">
-      <a href="#explorar" data-section="explorar"><span>01</span>Explorar</a>
-      <a href="#tiempo" data-section="tiempo"><span>02</span>Tiempo</a>
-      <a href="#relaciones" data-section="relaciones"><span>03</span>Relaciones</a>
-      <a href="#estado" data-section="estado"><span>04</span>Estado del país</a>
-      <a href="#contribuir" data-section="contribuir"><span>05</span>Contribuir</a>
-    </nav>
-    <a class="toc-github" href="https://github.com/kubrick06010/Venezuela-Futura" aria-label="Abrir repositorio en GitHub">GitHub ↗</a>
-  </aside>
-  <button class="toc-toggle" type="button" aria-label="Abrir navegación" aria-controls="mobile-toc" aria-expanded="false">☰</button>
-  <nav id="mobile-toc" class="mobile-toc" aria-label="Tabla de contenidos móvil">
-    <a href="#explorar">Explorar</a><a href="#tiempo">Tiempo</a><a href="#relaciones">Relaciones</a><a href="#estado">Estado</a><a href="#contribuir">Contribuir</a>
-  </nav>
+  <header class="site-header">
+    <div class="site-nav">
+      <a class="brand" href="#inicio">Venezuela Futura</a>
+      <nav class="desktop-nav" aria-label="Secciones">
+        <a href="#explorar" data-section="explorar">Explorar</a>
+        <a href="#tiempo" data-section="tiempo">Tiempo</a>
+        <a href="#relaciones" data-section="relaciones">Relaciones</a>
+        <a href="#estado" data-section="estado">Estado del país</a>
+        <a href="#contribuir" data-section="contribuir">Contribuir</a>
+      </nav>
+      <label class="mobile-section" for="section-select"><span>Sección</span><select id="section-select" aria-label="Ir a una sección"><option value="inicio">Inicio</option><option value="explorar">Explorar</option><option value="tiempo">Tiempo</option><option value="relaciones">Relaciones</option><option value="estado">Estado del país</option><option value="contribuir">Contribuir</option></select></label>
+      <a class="github-link" href="https://github.com/kubrick06010/Venezuela-Futura">GitHub ↗</a>
+    </div>
+  </header>
 
   <div class="page-shell">
     <header id="inicio" class="hero">
-      <nav class="topbar"><a class="brand" href="./">Venezuela Futura</a><a href="https://github.com/kubrick06010/Venezuela-Futura">GitHub</a></nav>
       <section class="hero-grid">
         <div><h1>Un atlas abierto para pensar Venezuela a largo plazo.</h1><p class="lead">El repositorio es la fuente de verdad. Esta web se reconstruye desde sus documentos y relaciones cada vez que una contribución aprobada llega a <code>main</code>.</p><p id="content-count" class="muted">Cargando corpus…</p></div>
         <aside class="principles"><h2>Principios guía</h2><ul><li>Venezuela no es una empresa.</li><li>Conocer antes de transformar.</li><li>Construir incluye mantener.</li><li>Medir servicio, no existencia.</li><li>Agencia sin aislamiento.</li></ul></aside>
