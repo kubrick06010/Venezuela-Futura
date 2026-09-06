@@ -9,69 +9,19 @@
 </head>
 <body>
   <header class="hero">
-    <nav class="topbar">
-      <a class="brand" href="./">Venezuela Futura</a>
-      <a href="https://github.com/kubrick06010/Venezuela-Futura">GitHub</a>
-    </nav>
+    <nav class="topbar"><a class="brand" href="./">Venezuela Futura</a><a href="https://github.com/kubrick06010/Venezuela-Futura">GitHub</a></nav>
     <section class="hero-grid">
-      <div>
-        <p class="eyebrow">Memoria conectiva · contexto · capacidades · futuro</p>
-        <h1>Un atlas abierto para pensar Venezuela a largo plazo.</h1>
-        <p class="lead">No es un programa de gobierno. Es una base navegable de conocimiento para entender el país, sus ideas, sus instituciones, su territorio y sus posibilidades.</p>
-      </div>
-      <aside class="principles">
-        <h2>Principios guía</h2>
-        <ul>
-          <li>Venezuela no es una empresa.</li>
-          <li>Conocer antes de transformar.</li>
-          <li>Construir incluye mantener.</li>
-          <li>Medir servicio, no existencia.</li>
-          <li>Agencia sin aislamiento.</li>
-        </ul>
-      </aside>
+      <div><h1>Un atlas abierto para pensar Venezuela a largo plazo.</h1><p class="lead">El repositorio es la fuente de verdad. Esta web se reconstruye desde sus documentos y relaciones cada vez que una contribución aprobada llega a <code>main</code>.</p><p id="content-count" class="muted">Cargando corpus…</p></div>
+      <aside class="principles"><h2>Principios guía</h2><ul><li>Venezuela no es una empresa.</li><li>Conocer antes de transformar.</li><li>Construir incluye mantener.</li><li>Medir servicio, no existencia.</li><li>Agencia sin aislamiento.</li></ul></aside>
     </section>
   </header>
-
   <main>
-    <section class="section">
-      <div class="section-title">
-        <p class="eyebrow">Explorar</p>
-        <h2>Capítulos del repositorio</h2>
-      </div>
-      <input id="search" class="search" type="search" placeholder="Buscar: petróleo, territorio, instituciones, Rangel, Guayana..." />
-      <div id="chapters" class="cards"></div>
-    </section>
-
-    <section class="section split">
-      <div>
-        <p class="eyebrow">Grafo inicial</p>
-        <h2>Ideas, personas e instituciones</h2>
-        <p>Este primer grafo es deliberadamente incompleto. Sirve para mostrar cómo el sitio puede pasar de una lista de documentos a una red navegable de relaciones.</p>
-        <div id="legend" class="legend"></div>
-      </div>
-      <div id="graph" class="graph" aria-label="Grafo de relaciones de Venezuela Futura"></div>
-    </section>
-
-    <section class="section">
-      <div class="section-title">
-        <p class="eyebrow">Foto 2026</p>
-        <h2>Capacidad instalada, disponible y real</h2>
-      </div>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr><th>Sistema</th><th>Pregunta clave</th><th>Archivo</th></tr>
-          </thead>
-          <tbody id="systems"></tbody>
-        </table>
-      </div>
-    </section>
+    <section class="section"><div class="section-title"><h2>Explorar el corpus</h2><p>Todo Markdown del repositorio entra automáticamente en este índice.</p></div><input id="search" class="search" type="search" placeholder="Buscar personas, petróleo, territorio, instituciones, Guayana…" /><div id="chapters" class="cards"></div></section>
+    <section class="section split"><div><h2>Relaciones</h2><p>Las aristas proceden de datos estructurados del repositorio, no del JavaScript de la página. Cada relación puede conservar su tipo y grado de confianza.</p><div id="legend" class="legend"></div></div><div id="graph" class="graph" aria-label="Grafo de relaciones de Venezuela Futura"></div></section>
+    <section class="section"><div class="section-title"><h2>Estado del país</h2><p>Documentos actuales de la foto de Venezuela; la tabla se genera a partir del directorio <code>08-estado-del-pais/</code>.</p></div><div class="table-wrap"><table><thead><tr><th>Documento</th><th>Qué contiene</th><th>Fuente</th></tr></thead><tbody id="systems"></tbody></table></div></section>
+    <section class="section"><h2>Contribuir</h2><p>Añade o mejora Markdown. Para enriquecer el atlas puedes declarar metadatos y relaciones; el Pull Request se valida antes de fusionarse.</p><p><a href="https://github.com/kubrick06010/Venezuela-Futura/blob/main/CONTRIBUTING.md">Leer la guía de contribución →</a></p></section>
   </main>
-
-  <footer>
-    <p>Fuente de verdad: repositorio GitHub. La web es una forma de navegarlo.</p>
-  </footer>
-
+  <footer><p>Fuente de verdad: repositorio GitHub · interfaz generada automáticamente.</p></footer>
   <script src="https://unpkg.com/cytoscape@3.28.1/dist/cytoscape.min.js"></script>
   <script src="assets/js/site.js"></script>
 </body>

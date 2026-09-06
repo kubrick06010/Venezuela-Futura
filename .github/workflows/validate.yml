@@ -1,0 +1,21 @@
+name: Validate contribution
+
+on:
+  pull_request:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+jobs:
+  content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build content index
+        run: python3 scripts/build_content.py
+      - name: Verify generated index
+        run: |
+          test -s site-data/content.json
+          test -f site-data/relations.json

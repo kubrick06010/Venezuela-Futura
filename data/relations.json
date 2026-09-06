@@ -1,0 +1,8 @@
+[
+  {"source":"03-pensamiento-venezolano--README","target":"05-instituciones--README","type":"ideas → instituciones","confidence":"interpretativa"},
+  {"source":"03-pensamiento-venezolano--README","target":"06-capacidades--README","type":"ideas → capacidades","confidence":"interpretativa"},
+  {"source":"01-contexto--sociedad-venezolana--como-aprendimos-a-ser-venezolanos","target":"03-pensamiento-venezolano--README","type":"contextualiza","confidence":"documentada"},
+  {"source":"08-estado-del-pais--foto-2026","target":"08-estado-del-pais--capa-humana-2025-2026","type":"profundiza","confidence":"documentada"},
+  {"source":"08-estado-del-pais--foto-2026","target":"08-estado-del-pais--capacidad-material-2026","type":"profundiza","confidence":"documentada"},
+  {"source":"08-estado-del-pais--sistemas-esenciales","target":"08-estado-del-pais--capacidad-material-2026","type":"interactúa","confidence":"documentada"}
+]
