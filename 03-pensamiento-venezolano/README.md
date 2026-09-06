@@ -1,6 +1,6 @@
 # Pensamiento venezolano
 
-Este directorio no será un panteón de próóceres intelectuales. La unidad principal de análisis son **los debates**, las ideas, sus contextos, sus críticos, las instituciones que produjeron y lo que ocurrió después.
+Este directorio no será un panteón de próceres intelectuales. La unidad principal de análisis son **los debates**, las ideas, sus contextos, sus críticos, las instituciones que produjeron y lo que ocurrió después.
 
 ## El grafo empieza aquí
 
