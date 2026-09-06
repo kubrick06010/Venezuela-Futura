@@ -1,6 +1,7 @@
 const repoBase = 'https://github.com/kubrick06010/Venezuela-Futura/blob/main/';
 let documents = [];
 let relations = [];
+let timeline = [];
 
 const typeColors = {
   persona: '#d7a84b',
@@ -13,13 +14,15 @@ const typeColors = {
 };
 
 async function loadData(){
-  const [docsRes, relRes] = await Promise.all([
+  const [docsRes, relRes, timelineRes] = await Promise.all([
     fetch('site-data/content.json', {cache:'no-store'}),
-    fetch('site-data/relations.json', {cache:'no-store'})
+    fetch('site-data/relations.json', {cache:'no-store'}),
+    fetch('data/timeline.json', {cache:'no-store'})
   ]);
   if (!docsRes.ok) throw new Error('No se pudo cargar el índice de contenido');
   documents = await docsRes.json();
   relations = relRes.ok ? await relRes.json() : [];
+  timeline = timelineRes.ok ? await timelineRes.json() : [];
 }
 
 function renderChapters(filter=''){
@@ -28,6 +31,19 @@ function renderChapters(filter=''){
   const visible = documents.filter(d => !q || [d.type,d.title,d.excerpt,d.path,...(d.topics||[])].join(' ').toLowerCase().includes(q));
   target.innerHTML = visible.map(d => `<a class="card" href="${repoBase}${encodeURI(d.path)}"><span class="tag">${d.type}</span><h3>${d.title}</h3><p>${d.excerpt || 'Documento del corpus.'}</p><small>${d.path}</small></a>`).join('') || '<p>No hay coincidencias.</p>';
   document.getElementById('content-count').textContent = `${documents.length} documentos indexados · ${relations.length} relaciones explícitas`;
+}
+
+function renderTimeline(){
+  const target = document.getElementById('timeline');
+  if (!timeline.length) { target.innerHTML = '<p>No hay hitos estructurados todavía.</p>'; return; }
+  const docById = new Map(documents.map(d => [d.id,d]));
+  const sorted = [...timeline].sort((a,b) => (a.year ?? a.start_year ?? 9999) - (b.year ?? b.start_year ?? 9999));
+  target.innerHTML = sorted.map(item => {
+    const year = item.year ?? `${item.start_year}–${item.end_year ?? ''}`;
+    const linked = (item.related || []).map(id => docById.get(id)).filter(Boolean);
+    const links = linked.length ? `<div class="timeline-links">${linked.map(d => `<a href="${repoBase}${encodeURI(d.path)}">${d.title}</a>`).join('')}</div>` : '';
+    return `<article class="timeline-item"><div class="timeline-year">${year}</div><div class="timeline-body"><span class="timeline-type">${item.type}</span><h3>${item.label}</h3>${links}</div></article>`;
+  }).join('');
 }
 
 function renderSystems(){
@@ -78,7 +94,7 @@ function renderGraph(){
 async function init(){
   try {
     await loadData();
-    renderChapters(); renderSystems(); renderLegend(); renderGraph();
+    renderChapters(); renderTimeline(); renderSystems(); renderLegend(); renderGraph();
     document.getElementById('search').addEventListener('input', e => renderChapters(e.target.value));
   } catch(err) {
     console.error(err);
