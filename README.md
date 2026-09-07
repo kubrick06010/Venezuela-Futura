@@ -8,6 +8,12 @@ Un repositorio abierto de ideas, investigación, memoria y prospectiva para pens
 
 Venezuela Futura no pretende escribir **el plan definitivo para Venezuela**. Pretende construir una memoria, una base de evidencia y un espacio de prospectiva que permita a generaciones de venezolanos pensar el país a largo plazo, confrontar alternativas y preservar conocimiento más allá de gobiernos y coyunturas.
 
+El propósito no es reivindicar una época, una generación, un liderazgo o una doctrina, ni atribuir a una sola causa el lugar al que ha llegado Venezuela. Es intentar reconstruir, con la mayor honestidad posible, **secuencias, decisiones, condicionantes, capacidades, resultados y controversias**: qué se sabía en cada momento, qué alternativas existían, qué se decidió, qué ocurrió después y qué podemos aprender hoy.
+
+El horizonte del proyecto es deliberadamente intergeneracional. Sus autores actuales pueden no llegar a presenciar muchos de los futuros que aquí se estudien. Por eso su valor no debe medirse por la posibilidad de realizar una ambición personal o un programa inmediato, sino por cuánto conocimiento verificable, plural y corregible pueda dejar disponible para quienes vengan después.
+
+> **No buscamos decidir el futuro por las próximas generaciones, sino ampliar su capacidad para comprender el pasado, conocer su presente y decidir mejor su propio futuro.**
+
 Este repositorio parte de una advertencia fundamental:
 
 > **Un país no es una empresa.**
@@ -27,6 +33,10 @@ La eficiencia, la productividad, la capacidad de ejecución y la medición son i
 - Agencia sin aislamiento: distinguir decisiones propias de condicionantes externos.
 - Comparar antes de declarar excepcionalidad.
 - Toda institución enseña mediante aquello que premia, tolera y castiga.
+- No atribuir a una identidad nacional comportamientos humanos generales sin evidencia comparativa suficiente.
+- Distinguir hechos, interpretaciones, hipótesis, controversias y juicios normativos.
+- Una secuencia temporal puede sugerir preguntas y mecanismos; por sí sola no demuestra causalidad.
+- El proyecto debe poder corregir sus propias conclusiones cuando aparezca mejor evidencia.
 
 ## Qué queremos preservar
 
@@ -86,6 +96,12 @@ Las discrepancias no deben eliminarse por conveniencia editorial. Si existen alt
 ## Una regla editorial importante
 
 El lenguaje nativo del proyecto debe ser descriptivo, preciso y políticamente inclusivo. Expresiones fuertemente asociadas a un movimiento, gobierno o periodo histórico venezolano pueden utilizarse al documentar ese contexto, pero no deberían convertirse automáticamente en la terminología propia del repositorio.
+
+Debemos escribir además pensando en una persona que llegue al repositorio sin haber participado en las conversaciones que le dieron origen. Una frase que sólo resulta equilibrada cuando se conoce nuestra intención es una frase insuficientemente precisa. Cuando un término pueda convertir una hipótesis en estereotipo, una secuencia en causalidad, una descripción en aprobación moral o una comparación en equivalencia, corresponde explicitar la distinción.
+
+Esto exige especial cuidado al estudiar periodos autoritarios, conflictos políticos, grupos sociales, identidades nacionales, derechos humanos y resultados económicos. Documentar una capacidad construida no implica justificar el régimen que la construyó; documentar un fracaso no prueba por sí mismo la ilegitimidad de todos los objetivos perseguidos; explicar un comportamiento no equivale a excusarlo.
+
+Venezuela Futura tampoco debe presentar a los venezolanos como portadores de rasgos inmutables. Los patrones sociales deben contrastarse histórica y comparativamente, atendiendo a instituciones, incentivos, circunstancias y a la capacidad humana de cambiar.
 
 ## Estado actual
 
