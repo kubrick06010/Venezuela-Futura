@@ -46,9 +46,36 @@ Esa condición crea relaciones distintas con Colombia, Brasil, Guyana, Trinidad 
 
 Nuestros vecinos no son variables externas puras. Una frontera puede convertir lo internacional en vida cotidiana: familia, trabajo, comercio, seguridad, migración, ecosistemas y cultura.
 
+La relación de Venezuela con el mundo tampoco se reduce a las relaciones entre gobiernos. Personas, migraciones, familias, diásporas, universidades, empresas, comunidades culturales y religiosas, ciencia, oficios, comercio e ideas han conectado históricamente al país con sociedades muy diversas. Esta dimensión debe estudiarse de forma comparada y basada en evidencia, sin convertir ejemplos de convivencia u hospitalidad en rasgos nacionales supuestamente inmutables.
+
+La investigación histórica puede ser extensa, pero el resultado debe ser selectivo. Un vínculo bilateral, una migración o un episodio entra en el análisis por lo que permite comprender, no simplemente porque ocurrió. Interesan especialmente los patrones que ayuden a explicar qué circuló, qué capacidades produjo o deterioró, qué dependencias creó, qué contribuyó Venezuela y qué relaciones perduraron.
+
 La soberanía no debe entenderse sólo como autosuficiencia. Una definición útil de trabajo es:
 
 > **Soberanía es también capacidad efectiva de decidir entre alternativas sin sustituir una dependencia por otra.**
+
+Esa capacidad puede ampliarse mediante cooperación e integración. La autonomía no exige hacerlo todo solos: algunas capacidades pueden construirse mejor con otros, siempre que la cooperación preserve derechos, legitimidad democrática y alternativas reales.
+
+Una hipótesis de trabajo para investigar es:
+
+```text
+capacidad propia
++ integración regional
++ cooperación internacional
++ relaciones diversificadas
+→ más alternativas reales
+→ mayor capacidad efectiva de decisión
+```
+
+La integración regional debe evaluarse por capacidades y resultados concretos, no por retórica ni por el número de organismos o tratados creados. Comercio, movilidad, reconocimiento de estudios y profesiones, ciencia, energía, infraestructura, pagos, salud, ambiente, seguridad y derechos portables pueden constituir ámbitos distintos de cooperación. Para cada uno corresponde preguntar:
+
+> **¿Qué problema se resuelve mejor conjuntamente que por separado, y qué debe permanecer en el ámbito nacional o local?**
+
+Venezuela debe estudiarse además como posible **contribuyente**, no sólo como receptora de cooperación. La pregunta no es únicamente qué puede obtener del mundo, sino qué capacidades, conocimientos, redes y bienes públicos puede ayudar a construir con otros.
+
+Las migraciones históricas, la emigración reciente, el eventual retorno y una posible inmigración futura forman parte de esa misma apertura. Una línea de investigación será cómo conservar relaciones humanas a través del tiempo, la distancia y las generaciones sin instrumentalizar a las personas ni exigir exclusividad identitaria, retorno o adhesión política. La conexión con Venezuela debe ser compatible con la integración plena en otras sociedades.
+
+> **Cooperar no es depender; integrarse no es desaparecer; pertenecer no exige pensar igual.**
 
 ## Sociedad venezolana
 
@@ -85,6 +112,12 @@ Preguntas importantes:
 - ¿Qué entendemos por "viveza criolla" y qué evidencia existe de que sea distintivamente venezolana?
 - ¿Cómo operan prestigio, autoridad, lealtad, sociabilidad y humor en distintos contextos institucionales?
 - ¿Qué estereotipos positivos y negativos sobre nosotros mismos terminan reproduciendo conductas?
+
+Las narrativas con las que una sociedad interpreta su pasado y se imagina a sí misma también merecen estudio. No buscamos producir una narración oficial ni reconciliar por decreto interpretaciones incompatibles. Interesa distinguir entre hechos que pueden establecerse, interpretaciones que deben contrastarse y desacuerdos que una sociedad plural debe poder sostener sin convertir al adversario político en alguien privado de derechos o de pertenencia.
+
+Una pregunta de trabajo es:
+
+> **¿Podemos construir un futuro común aunque nuestras interpretaciones del pasado no sean idénticas?**
 
 ## Interno y externo
 
