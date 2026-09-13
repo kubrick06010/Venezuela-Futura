@@ -37,6 +37,32 @@ historia + territorio + economía + relaciones exteriores
        nuevas experiencias colectivas
 ```
 
+## Narrativas, desacuerdo y futuro compartido
+
+Las sociedades no sólo acumulan hechos: también construyen relatos para darles sentido. Esos relatos pueden influir en cómo interpretamos responsabilidades, capacidades, amenazas y futuros posibles, pero no deben confundirse con los hechos mismos.
+
+Roberto Casanova y Gerver Torres, en la segunda edición de *Un sueño para Venezuela* (2020), colocan explícitamente las narrativas en el centro de su reflexión sobre reconstrucción. Definen las narrativas políticas como relatos mediante los cuales una sociedad interpreta su pasado y presente y prefigura su futuro, y subrayan que varias narrativas conviven y compiten. Su propuesta debe tratarse como una interpretación relevante y un antecedente metodológico, no como una descripción neutral ni como la narrativa que este proyecto deba adoptar.
+
+Venezuela Futura debe distinguir al menos cuatro capas:
+
+```text
+hechos que pueden establecerse
+        ↓
+interpretaciones que deben contrastarse
+        ↓
+controversias que siguen abiertas
+        ↓
+juicios normativos y futuros deseados
+```
+
+La reconstrucción de confianza no exige una memoria idéntica ni una narración oficial única. Una sociedad democrática debe poder sostener desacuerdos profundos sobre su historia siempre que existan hechos investigables, derechos iguales, debido proceso, pluralismo y reglas comunes.
+
+Pregunta de trabajo:
+
+> **¿Podemos construir un futuro común aunque nuestras interpretaciones del pasado no sean idénticas?**
+
+Esto tiene una consecuencia para cualquier investigación futura sobre reconciliación nacional: **reconciliación no debe utilizarse como sinónimo de olvido, impunidad, unanimidad ni perdón obligatorio**. Antes de formular propuestas será necesario estudiar comparativamente verdad, justicia, reparación, garantías de no repetición, reforma institucional y convivencia democrática, distinguiendo responsabilidades individuales de identidades políticas colectivas.
+
 ## Transformaciones históricas a investigar
 
 ### 1. Colonia, castas, esclavitud y sociedad jerárquica
@@ -74,7 +100,9 @@ La transición desde una sociedad predominantemente rural hacia una sociedad urb
 
 ### 6. Inmigración y mestizaje contemporáneo
 
-La inmigración europea y latinoamericana del siglo XX modificó empresas, oficios, gastronomía, familias, ciudades y expectativas de movilidad. Debe estudiarse también críticamente la política estatal que en ciertos períodos jerarquizó al inmigrante europeo como modelo de modernización frente a la población local.
+La inmigración europea, latinoamericana, caribeña, árabe y de otros orígenes modificó empresas, oficios, gastronomía, familias, ciudades, comunidades religiosas y redes internacionales. Debe estudiarse qué condiciones facilitaron convivencia e incorporación y cuáles produjeron exclusión, sin convertir ejemplos históricos de hospitalidad o pluralismo en un supuesto rasgo natural e inmutable del venezolano.
+
+Debe estudiarse también críticamente la política estatal que en ciertos períodos jerarquizó determinados orígenes migratorios como modelos de modernización frente a la población local.
 
 ### 7. Democracia de masas, partidos y Estado distribuidor
 
@@ -92,7 +120,13 @@ No partir de que 1998 creó desde cero una nueva cultura política. Preguntar qu
 
 La crisis prolongada produjo nuevos aprendizajes: emigrar, remitir dinero, improvisar, dolarización informal, redes transnacionales, trabajo remoto, desconfianza, adaptación y exposición de millones de venezolanos a instituciones y culturas diferentes.
 
-Pregunta para el futuro: **¿qué Venezuela cultural regresará —física o intelectualmente— desde la diáspora?**
+La diáspora no debe estudiarse únicamente como pérdida demográfica ni bajo la pregunta de cuántas personas regresarán. Interesa también cómo se conservan relaciones humanas, profesionales, científicas, familiares y culturales a través de la distancia y las generaciones, y cómo esas conexiones pueden coexistir con la integración plena de las personas en sus sociedades de residencia.
+
+Preguntas para el futuro:
+
+- **¿Qué Venezuela cultural regresará —física o intelectualmente— desde la diáspora?**
+- **¿Cómo mantener abierta la pertenencia sin convertirla en obligación de retorno, inversión, adhesión política o exclusividad identitaria?**
+- **Si Venezuela vuelve a ser un país receptor, qué instituciones permitirían incorporar nuevas migraciones con derechos iguales y pertenencia plural?**
 
 ## Dimensiones conductuales a investigar
 
@@ -183,6 +217,7 @@ Investigar el humor como crítica, cohesión, irreverencia y supervivencia, pero
 - Asdrúbal Baptista — capitalismo rentístico.
 - Fernando Coronil — petro-Estado, naturaleza, dinero y modernidad.
 - Carlos Rangel y sus críticos — agencia interna vs condicionantes externos.
+- Roberto Casanova y Gerver Torres — narrativas políticas, estados emocionales, reconstrucción y visión de largo plazo.
 
 ### Corpus mayor
 
@@ -258,6 +293,7 @@ criterios públicos de ascenso
 - Quintero, Rodolfo. *La cultura del petróleo*.
 - Cabrujas, José Ignacio. "El Estado del disimulo", entrevista en *Estado & Reforma*, COPRE, 1987.
 - Briceño Guerrero, José Manuel. *El laberinto de los tres minotauros*.
+- Casanova, Roberto y Gerver Torres. *Un sueño para Venezuela*. 2.ª ed., Asociación Civil Liderazgo y Visión, 2020.
 - Latinobarómetro, series temporales y microdatos.
 
 ## Próximos pasos
@@ -266,5 +302,6 @@ criterios públicos de ascenso
 2. Extraer las series venezolanas de confianza, democracia, autoridad, corrupción y relaciones interpersonales y compararlas con América Latina.
 3. Construir una cronología 1900–2026 de shocks sociales capaces de modificar expectativas y conducta.
 4. Investigar variación regional: Andes, Zulia, Llanos, Oriente, Guayana, Caracas/centro y Caribe.
-5. Investigar variación generacional y efecto de la diáspora.
-6. Sólo entonces construir modelos conductuales para policía, Fuerzas Armadas, justicia, administración pública, educación y servicios.
+5. Investigar variación generacional, inmigración, pluralismo y efecto de la diáspora.
+6. Investigar comparativamente mecanismos de verdad, justicia, reparación, garantías de no repetición y convivencia antes de formular una propuesta venezolana de reconciliación.
+7. Sólo entonces construir modelos conductuales para policía, Fuerzas Armadas, justicia, administración pública, educación y servicios.
