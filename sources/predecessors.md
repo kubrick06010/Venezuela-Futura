@@ -4,6 +4,20 @@ Este archivo conserva proyectos, instituciones y marcos que no deben perderse de
 
 ## Antecedentes venezolanos contemporáneos
 
+### Un sueño para Venezuela — Roberto Casanova y Gerver Torres
+
+La segunda edición (2020) de *Un sueño para Venezuela*, publicada por la Asociación Civil Liderazgo y Visión, es un antecedente especialmente relevante por combinar visión de largo plazo, pedagogía ciudadana, interpretación histórica y reflexión explícita sobre **emociones, narrativas y reconstrucción**.
+
+Los autores entienden las narrativas políticas como relatos —o conjuntos de relatos— mediante los cuales una sociedad interpreta su pasado y presente y prefigura su futuro. Señalan además que en toda sociedad conviven y compiten varias narrativas y proponen la suya como una contribución a una conversación cívica, no como cierre del debate.
+
+Venezuela Futura puede aprender de ese mecanismo sin adoptar automáticamente su diagnóstico, programa normativo ni categorías. En particular interesa conservar esta pregunta metodológica:
+
+> **¿Cómo influyen los relatos con los que explicamos el pasado y nuestras capacidades presentes sobre los futuros que consideramos posibles?**
+
+La respuesta del proyecto debe mantener una salvaguarda adicional: ninguna narrativa inspiradora sustituye la comprobación de hechos, la visibilidad de controversias ni el derecho de distintas personas a interpretar de manera diferente una historia común.
+
+Referencia base: Roberto Casanova y Gerver Torres, *Un sueño para Venezuela*, 2.ª ed., Asociación Civil Liderazgo y Visión, 2020.
+
 ### Plan País
 
 Hoja de ruta presentada desde la Asamblea Nacional en 2019 para recuperación económica, infraestructura e instituciones. Debe estudiarse como antecedente importante, no adoptarse automáticamente como programa del repositorio.
