@@ -3,42 +3,157 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Venezuela Futura</title>
-  <meta name="description" content="Atlas navegable de ideas, contexto, memoria y capacidades para pensar la Venezuela del futuro." />
+  <meta name="theme-color" content="#0b2239" />
+  <title>Venezuela Futura — conocimiento público</title>
+  <meta name="description" content="Un corpus vivo para conectar memoria, instituciones, capacidades, territorio y futuros posibles." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/site.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="site-nav">
-      <a class="brand" href="#inicio">Venezuela Futura</a>
-      <nav class="desktop-nav" aria-label="Secciones">
-        <a href="#explorar" data-section="explorar">Explorar</a>
-        <a href="#tiempo" data-section="tiempo">Tiempo</a>
-        <a href="#relaciones" data-section="relaciones">Relaciones</a>
-        <a href="#estado" data-section="estado">Estado del país</a>
-        <a href="#contribuir" data-section="contribuir">Contribuir</a>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="masthead" id="inicio">
+    <div class="nav-shell">
+      <a class="brand" href="#inicio">
+        <strong>Venezuela Futura</strong>
+        <span>Memoria · conocimiento · capacidad · futuros</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <a href="#explorar">Explorar</a>
+        <a href="#rutas">Rutas de lectura</a>
+        <a href="#relaciones">Relaciones</a>
+        <a href="#proyecto">Acerca</a>
       </nav>
-      <label class="mobile-section" for="section-select"><span>Sección</span><select id="section-select" aria-label="Ir a una sección"><option value="inicio">Inicio</option><option value="explorar">Explorar</option><option value="tiempo">Tiempo</option><option value="relaciones">Relaciones</option><option value="estado">Estado del país</option><option value="contribuir">Contribuir</option></select></label>
-      <a class="github-link" href="https://github.com/kubrick06010/Venezuela-Futura">GitHub ↗</a>
+      <button class="search-trigger" type="button" aria-controls="search-dialog">Buscar <kbd>/</kbd></button>
+    </div>
+    <div class="status-line">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span>Actualizado desde el repositorio</span>
+      <span id="corpus-status">Preparando el corpus…</span>
     </div>
   </header>
 
-  <div class="page-shell">
-    <header id="inicio" class="hero">
-      <section class="hero-grid">
-        <div><h1>Un atlas abierto para pensar Venezuela a largo plazo.</h1><p class="lead">El repositorio es la fuente de verdad. Esta web se reconstruye desde sus documentos y relaciones cada vez que una contribución aprobada llega a <code>main</code>.</p><p id="content-count" class="muted">Cargando corpus…</p></div>
-        <aside class="principles"><h2>Principios guía</h2><ul><li>Venezuela no es una empresa.</li><li>Conocer antes de transformar.</li><li>Construir incluye mantener.</li><li>Medir servicio, no existencia.</li><li>Agencia sin aislamiento.</li></ul></aside>
-      </section>
-    </header>
-    <main>
-      <section id="explorar" class="section"><div class="section-title"><h2>Explorar el corpus</h2><p>Todo Markdown del repositorio entra automáticamente en este índice.</p></div><input id="search" class="search" type="search" placeholder="Buscar personas, petróleo, territorio, instituciones, Guayana…" /><div id="chapters" class="cards"></div></section>
-      <section id="tiempo" class="section"><div class="section-title"><h2>Tiempo</h2><p>Ideas, instituciones, capacidades y shocks situados en una misma secuencia histórica.</p></div><div id="timeline" class="timeline" aria-label="Línea de tiempo de Venezuela Futura"></div></section>
-      <section id="relaciones" class="section split"><div><h2>Relaciones</h2><p>Las aristas proceden de datos estructurados del repositorio, no del JavaScript de la página. Cada relación puede conservar su tipo y grado de confianza.</p><div id="legend" class="legend"></div></div><div id="graph" class="graph" aria-label="Grafo de relaciones de Venezuela Futura"></div></section>
-      <section id="estado" class="section"><div class="section-title"><h2>Estado del país</h2><p>Documentos actuales de la foto de Venezuela; la tabla se genera a partir del directorio <code>08-estado-del-pais/</code>.</p></div><div class="table-wrap"><table><thead><tr><th>Documento</th><th>Qué contiene</th><th>Fuente</th></tr></thead><tbody id="systems"></tbody></table></div></section>
-      <section id="contribuir" class="section"><h2>Contribuir</h2><p>Añade o mejora Markdown. Para enriquecer el atlas puedes declarar metadatos y relaciones; el Pull Request se valida antes de fusionarse.</p><p><a href="https://github.com/kubrick06010/Venezuela-Futura/blob/main/CONTRIBUTING.md">Leer la guía de contribución →</a></p></section>
-    </main>
-    <footer><p>Fuente de verdad: repositorio GitHub · interfaz generada automáticamente.</p></footer>
-  </div>
+  <main id="contenido">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Una institución viva de conocimiento público</p>
+        <h1>Conocimiento público para reconstruir capacidad institucional.</h1>
+        <p class="hero-lead">Reunimos memoria, ideas, evidencias y experiencias para comprender el país, fortalecer sus capacidades y abrir futuros posibles.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#explorar">Explorar el corpus <span>→</span></a>
+          <a class="text-link" href="#rutas">Seguir una ruta <span>→</span></a>
+        </div>
+      </div>
+
+      <div class="knowledge-flow" aria-labelledby="flow-title">
+        <div class="flow-heading">
+          <div>
+            <p class="eyebrow">Un repositorio que crece y conecta</p>
+            <h2 id="flow-title">Del pasado a los futuros posibles</h2>
+          </div>
+          <p>Las relaciones se generan desde el corpus; no son una cartografía territorial.</p>
+        </div>
+        <div id="flow-visual" class="flow-visual" role="img" aria-label="Flujo abstracto entre memoria, instituciones, capacidades y futuros"></div>
+        <p class="flow-caption">El conocimiento es un proceso en continua construcción.</p>
+      </div>
+    </section>
+
+    <section id="rutas" class="section routes-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">Tres maneras de entrar</p><h2>Rutas de lectura</h2></div>
+        <a href="#explorar">Ver todo el corpus →</a>
+      </div>
+      <div class="routes">
+        <button class="route" data-doc="linea-tiempo-venezuela">
+          <span class="route-number">01</span>
+          <span><small>Memoria · contexto</small><strong>Memoria y orígenes</strong><em>Claves históricas para entender dónde estamos.</em></span>
+          <b>→</b>
+        </button>
+        <button class="route" data-doc="07-diseno-institucional--README">
+          <span class="route-number">02</span>
+          <span><small>Instituciones · capacidades</small><strong>Instituciones que importan</strong><em>Cómo funcionan, qué desafíos enfrentan y qué podemos mejorar.</em></span>
+          <b>→</b>
+        </button>
+        <button class="route" data-doc="idea-construccion-capacidades">
+          <span class="route-number">03</span>
+          <span><small>Capacidades · futuros</small><strong>Futuros posibles</strong><em>Condiciones y decisiones que abren alternativas.</em></span>
+          <b>→</b>
+        </button>
+      </div>
+    </section>
+
+    <section class="section recent-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">Nuevos aportes, más conexiones</p><h2>Lecturas del corpus</h2></div>
+        <a href="#explorar">Ver todas las lecturas →</a>
+      </div>
+      <div class="recent-layout">
+        <div id="recent-list" class="document-ledger"></div>
+        <aside id="featured-reading" class="featured-reading" aria-live="polite"></aside>
+      </div>
+    </section>
+
+    <section id="relaciones" class="section relation-section">
+      <div class="relation-copy">
+        <p class="eyebrow">Relaciones del conocimiento</p>
+        <h2>Ideas que ganan sentido cuando se conectan.</h2>
+        <p>El grafo diferencia relaciones documentadas, interpretativas e inferidas. Cada nodo conduce a su lectura de origen.</p>
+        <div id="legend" class="legend"></div>
+      </div>
+      <div id="graph" class="graph" aria-label="Grafo interactivo del corpus"></div>
+    </section>
+
+    <section id="explorar" class="section corpus-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">Índice generado automáticamente</p><h2>Explorar el corpus</h2></div>
+        <p id="result-count"></p>
+      </div>
+      <div class="filters">
+        <input id="search" type="search" placeholder="Buscar temas, personas, instituciones…" aria-label="Buscar en el corpus" />
+        <div id="domain-filters" class="domain-filters" aria-label="Filtrar por dominio"></div>
+      </div>
+      <div id="documents" class="document-list"></div>
+    </section>
+
+    <section id="proyecto" class="section project-section">
+      <p class="eyebrow">Sobre el proyecto</p>
+      <h2>Una conversación pública, plural y rigurosa.</h2>
+      <p>Venezuela Futura no representa al Estado actual ni a una facción. Anticipa la dignidad, el rigor y la continuidad de las instituciones que el país merece recuperar.</p>
+      <a href="https://github.com/kubrick06010/Venezuela-Futura">Examinar fuentes y contribuir en GitHub ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <strong>Venezuela Futura</strong>
+    <span>Más conocimiento. Más capacidad. Más futuros posibles.</span>
+    <a href="https://github.com/kubrick06010/Venezuela-Futura">Fuente y procedencia ↗</a>
+  </footer>
+
+  <dialog id="search-dialog" class="search-dialog">
+    <form method="dialog"><button aria-label="Cerrar búsqueda">×</button></form>
+    <label for="dialog-search">Buscar en el corpus</label>
+    <input id="dialog-search" type="search" placeholder="Escribe una palabra o una pregunta…" />
+    <div id="dialog-results"></div>
+  </dialog>
+
+  <aside id="reader" class="reader" aria-hidden="true" aria-labelledby="reader-title">
+    <button id="reader-close" class="reader-close" aria-label="Cerrar lectura">×</button>
+    <div class="reader-shell">
+      <div class="reader-meta">
+        <p class="eyebrow">Artículo del corpus</p>
+        <h2 id="reader-title"></h2>
+        <p id="reader-path"></p>
+        <nav id="reader-toc" aria-label="En esta lectura"></nav>
+        <a id="reader-source" target="_blank" rel="noopener">Ver fuente en GitHub ↗</a>
+      </div>
+      <article id="reader-body" class="reader-body"></article>
+    </div>
+  </aside>
+  <div id="reader-backdrop" class="reader-backdrop"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="https://unpkg.com/cytoscape@3.28.1/dist/cytoscape.min.js"></script>
   <script src="assets/js/site.js"></script>
 </body>
