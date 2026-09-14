@@ -102,7 +102,18 @@
         <p>El grafo diferencia relaciones documentadas, interpretativas e inferidas. Cada nodo conduce a su lectura de origen.</p>
         <div id="legend" class="legend"></div>
       </div>
-      <div id="graph" class="graph" aria-label="Grafo interactivo del corpus"></div>
+      <div class="graph-shell">
+        <div class="graph-toolbar">
+          <span>Vista agregada por ámbito</span>
+          <strong id="graph-summary"></strong>
+        </div>
+        <div id="graph" class="graph" aria-label="Mapa agregado de relaciones entre ámbitos del corpus"></div>
+        <div class="graph-controls">
+          <label for="graph-domain-select">Explorar un ámbito</label>
+          <select id="graph-domain-select"></select>
+        </div>
+        <div id="graph-detail" class="graph-detail" aria-live="polite"></div>
+      </div>
     </section>
 
     <section id="explorar" class="section corpus-section">
