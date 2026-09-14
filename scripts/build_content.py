@@ -46,8 +46,10 @@ def title_of(body, path):
     return m.group(1).strip() if m else ("Inicio" if path.name == 'README.md' else path.stem.replace('-', ' ').title())
 
 
-def excerpt(body):
+def excerpt(body, title=""):
     clean = re.sub(r'```.*?```', ' ', body, flags=re.S)
+    if title:
+        clean = re.sub(r'^\s*#\s+' + re.escape(title) + r'\s*$', '', clean, count=1, flags=re.M | re.I)
     clean = re.sub(r'^#+\s+', '', clean, flags=re.M)
     clean = re.sub(r'[*_>`\[\]()]', '', clean)
     clean = re.sub(r'\s+', ' ', clean).strip()
@@ -85,7 +87,7 @@ def main():
             "title": str(meta.get('name') or meta.get('title') or title_of(body, path)),
             "path": rel.as_posix(),
             "topics": topics,
-            "excerpt": str(meta.get('summary') or excerpt(body)),
+            "excerpt": str(meta.get('summary') or excerpt(body, str(meta.get('name') or meta.get('title') or title_of(body, path)))),
         }
         docs.append(doc)
         relations.extend(normalize_relations(meta.get('relations', []), doc_id))
