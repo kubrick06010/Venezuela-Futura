@@ -21,3 +21,19 @@ jobs:
           test -f site-data/relations.json
       - name: Check browser JavaScript syntax
         run: node --check assets/js/site.js
+      - name: Install visual QA browser
+        if: github.event_name == 'pull_request'
+        run: |
+          npm install --no-save --no-package-lock playwright@1.55.0
+          npx playwright install --with-deps chromium
+      - name: Capture visual QA
+        if: github.event_name == 'pull_request'
+        run: |
+          python3 -m http.server 4173 > /tmp/venezuela-futura-server.log 2>&1 &
+          node scripts/visual_qa.mjs
+      - name: Upload visual QA
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-qa
+          path: artifacts/visual-qa/
