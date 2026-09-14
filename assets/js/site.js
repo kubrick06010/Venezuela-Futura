@@ -2,6 +2,7 @@ const repoBlob = 'https://github.com/kubrick06010/Venezuela-Futura/blob/main/';
 let documents = [];
 let relations = [];
 let activeDomain = 'Todos';
+let readerReturnFocus = null;
 
 const domains = {
   '00-principios':'Principios',
@@ -47,12 +48,12 @@ function renderFlow(){
     {name:'Capacidades',note:'Qué fortalecer',filter:['Capacidades','Territorio']},
     {name:'Futuros',note:'Qué podemos construir',filter:['Pensamiento','Estado del país']}
   ];
-  const xs = [8,37,66,94];
+  const xs = [12,38,64,88];
   const ys = [34,47,61,75,88];
   const counts = stages.map(stage => documents.filter(doc => stage.filter.includes(domainOf(doc))).length);
   const labels = stages.map((stage,index) =>
     `<div class="flow-stage" style="left:${xs[index]}%"></div>
-     <div class="flow-label" style="left:${xs[index]}%">
+     <div class="flow-label flow-label-${index}" style="left:${xs[index]}%">
        <strong>${stage.name}</strong><span>${stage.note}</span>
      </div>`).join('');
   const paths = [];
@@ -84,9 +85,14 @@ function renderRoutes(){
 }
 
 function renderRecent(){
-  const selected = documents
-    .filter(doc => doc.path !== 'README.md' && !doc.path.endsWith('/README.md'))
-    .slice(-5).reverse();
+  const curatedIds = [
+    'linea-tiempo-venezuela',
+    '08-estado-del-pais--foto-2026',
+    'idea-construccion-capacidades',
+    'institucion-cvg',
+    'debate-agencia-dependencia'
+  ];
+  const selected = curatedIds.map(id => documents.find(doc => doc.id === id)).filter(Boolean);
   const list = document.getElementById('recent-list');
   list.innerHTML = selected.map((doc,index) => `
     <button class="ledger-row" data-id="${escapeHtml(doc.id)}">
@@ -207,24 +213,47 @@ function buildToc(){
   }).join('');
 }
 
+function normalizeTitle(value){
+  return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .replace(/[^a-zA-Z0-9]+/g,' ').trim().toLowerCase();
+}
+
+function cleanMarkdown(markdown,documentTitle){
+  let clean = markdown.replace(/^\uFEFF/,'');
+  clean = clean.replace(/^---\s*\r?\n[\s\S]*?\r?\n---\s*(?:\r?\n|$)/,'');
+  const firstHeading = clean.match(/^\s*#\s+(.+?)\s*(?:\r?\n|$)/);
+  if(firstHeading && normalizeTitle(firstHeading[1]) === normalizeTitle(documentTitle)){
+    clean = clean.slice(firstHeading[0].length);
+  }
+  return clean.trim();
+}
+
 async function openReader(doc){
   if(!doc) return;
   const reader = document.getElementById('reader');
   const body = document.getElementById('reader-body');
+  const currentFocus = document.activeElement;
+  readerReturnFocus = document.getElementById('search-dialog').contains(currentFocus)
+    ? document.querySelector('.search-trigger')
+    : currentFocus;
   document.getElementById('reader-title').textContent = doc.title;
   document.getElementById('reader-path').textContent = doc.path;
   const source = document.getElementById('reader-source');
   source.href = repoBlob + encodeURI(doc.path);
   body.innerHTML = '<p>Cargando lectura…</p>';
   reader.classList.add('open');
+  reader.removeAttribute('inert');
   reader.setAttribute('aria-hidden','false');
   document.getElementById('reader-backdrop').classList.add('open');
   document.body.classList.add('reader-open');
+  document.getElementById('reader-close').focus();
   try{
     const response = await fetch(encodeURI(doc.path),{cache:'no-store'});
     if(!response.ok) throw new Error('No se pudo abrir el documento');
-    const markdown = await response.text();
-    body.innerHTML = window.marked ? marked.parse(markdown) : `<pre>${escapeHtml(markdown)}</pre>`;
+    const markdown = cleanMarkdown(await response.text(),doc.title);
+    body.innerHTML = window.marked && window.DOMPurify
+      ? DOMPurify.sanitize(marked.parse(markdown))
+      : `<pre>${escapeHtml(markdown)}</pre>`;
     buildToc();
     history.replaceState(null,'',`?doc=${encodeURIComponent(doc.id)}`);
   }catch(error){
@@ -233,18 +262,22 @@ async function openReader(doc){
 }
 
 function closeReader(){
-  document.getElementById('reader').classList.remove('open');
-  document.getElementById('reader').setAttribute('aria-hidden','true');
+  const reader = document.getElementById('reader');
+  if(!reader.classList.contains('open')) return;
+  reader.classList.remove('open');
+  reader.setAttribute('aria-hidden','true');
+  reader.setAttribute('inert','');
   document.getElementById('reader-backdrop').classList.remove('open');
   document.body.classList.remove('reader-open');
   history.replaceState(null,'',location.pathname + location.hash);
+  if(readerReturnFocus?.isConnected) readerReturnFocus.focus();
 }
 
 function setupReader(){
   document.getElementById('reader-close').addEventListener('click',closeReader);
   document.getElementById('reader-backdrop').addEventListener('click',closeReader);
   document.addEventListener('keydown',event => {
-    if(event.key === 'Escape') closeReader();
+    if(event.key === 'Escape' && document.getElementById('reader').classList.contains('open')) closeReader();
   });
 }
 
@@ -259,6 +292,7 @@ function setupSearch(){
   const dialog = document.getElementById('search-dialog');
   const input = document.getElementById('dialog-search');
   const results = document.getElementById('dialog-results');
+  const guidance = document.getElementById('search-guidance');
   const open = () => {
     dialog.showModal();
     setTimeout(() => input.focus(),20);
@@ -271,8 +305,11 @@ function setupSearch(){
   });
   input.addEventListener('input',() => {
     const found = input.value.trim() ? searchResults(input.value.trim()) : [];
+    guidance.textContent = input.value.trim()
+      ? `${found.length} ${found.length === 1 ? 'resultado' : 'resultados'}`
+      : 'Busca una idea, persona, institución o episodio.';
     results.innerHTML = found.map(doc => `
-      <button class="dialog-result" data-id="${escapeHtml(doc.id)}">
+      <button type="button" class="dialog-result" data-id="${escapeHtml(doc.id)}">
         <strong>${escapeHtml(doc.title)}</strong><small>${escapeHtml(domainOf(doc))}</small>
       </button>`).join('');
     results.querySelectorAll('button').forEach(button => button.addEventListener('click',() => {
