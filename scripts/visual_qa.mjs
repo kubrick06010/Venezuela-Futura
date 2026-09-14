@@ -41,8 +41,7 @@ await ready(mobile);
 const mobileWidths = await mobile.evaluate(() => [document.body.scrollWidth,document.body.clientWidth]);
 if(mobileWidths[0] > mobileWidths[1] + 1) throw new Error(`Mobile horizontal overflow: ${mobileWidths.join(' > ')}`);
 await mobile.screenshot({path:`${output}/04-home-mobile.png`,fullPage:false});
-await mobile.goto('http://127.0.0.1:4173/#relaciones',{waitUntil:'networkidle'});
-await mobile.evaluate(() => document.fonts.ready);
+await mobile.locator('#relaciones').scrollIntoViewIfNeeded();
 await mobile.waitForTimeout(300);
 await mobile.screenshot({path:`${output}/05-relations-mobile.png`,fullPage:false});
 
