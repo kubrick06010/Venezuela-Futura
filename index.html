@@ -86,7 +86,7 @@
 
     <section class="section recent-section">
       <div class="section-heading">
-        <div><p class="eyebrow">Nuevos aportes, más conexiones</p><h2>Lecturas del corpus</h2></div>
+        <div><p class="eyebrow">Una selección para comenzar</p><h2>Lecturas fundamentales</h2></div>
         <a href="#explorar">Ver todas las lecturas →</a>
       </div>
       <div class="recent-layout">
@@ -131,14 +131,15 @@
     <a href="https://github.com/kubrick06010/Venezuela-Futura">Fuente y procedencia ↗</a>
   </footer>
 
-  <dialog id="search-dialog" class="search-dialog">
+  <dialog id="search-dialog" class="search-dialog" aria-labelledby="search-dialog-title">
     <form method="dialog"><button aria-label="Cerrar búsqueda">×</button></form>
-    <label for="dialog-search">Buscar en el corpus</label>
+    <label id="search-dialog-title" for="dialog-search">Buscar en el corpus</label>
     <input id="dialog-search" type="search" placeholder="Escribe una palabra o una pregunta…" />
-    <div id="dialog-results"></div>
+    <p id="search-guidance" class="search-guidance">Busca una idea, persona, institución o episodio.</p>
+    <div id="dialog-results" aria-live="polite"></div>
   </dialog>
 
-  <aside id="reader" class="reader" aria-hidden="true" aria-labelledby="reader-title">
+  <aside id="reader" class="reader" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="reader-title" inert>
     <button id="reader-close" class="reader-close" aria-label="Cerrar lectura">×</button>
     <div class="reader-shell">
       <div class="reader-meta">
@@ -153,7 +154,8 @@
   </aside>
   <div id="reader-backdrop" class="reader-backdrop"></div>
 
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
   <script src="https://unpkg.com/cytoscape@3.28.1/dist/cytoscape.min.js"></script>
   <script src="assets/js/site.js"></script>
 </body>
