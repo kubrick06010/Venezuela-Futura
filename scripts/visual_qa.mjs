@@ -29,6 +29,7 @@ await relationSection.screenshot({path:`${output}/02-relations-desktop.png`});
 
 await desktop.locator('.route').first().click();
 await desktop.locator('#reader-body h2').first().waitFor({state:'visible'});
+await desktop.waitForTimeout(400);
 const readerText = await desktop.locator('#reader-body').innerText();
 if(readerText.trimStart().startsWith('---') || readerText.includes('relations:')) throw new Error('Reader exposes front matter');
 await desktop.screenshot({path:`${output}/03-reader-desktop.png`,fullPage:false});
@@ -41,8 +42,9 @@ const mobileWidths = await mobile.evaluate(() => [document.body.scrollWidth,docu
 if(mobileWidths[0] > mobileWidths[1] + 1) throw new Error(`Mobile horizontal overflow: ${mobileWidths.join(' > ')}`);
 await mobile.screenshot({path:`${output}/04-home-mobile.png`,fullPage:false});
 await mobile.locator('#relaciones').scrollIntoViewIfNeeded();
+await mobile.evaluate(() => window.scrollBy(0,-100));
 await mobile.waitForTimeout(300);
-await mobile.locator('#relaciones').screenshot({path:`${output}/05-relations-mobile.png`});
+await mobile.screenshot({path:`${output}/05-relations-mobile.png`,fullPage:false});
 
 if(browserErrors.length) throw new Error(`Browser errors:\n${browserErrors.join('\n')}`);
 await browser.close();
