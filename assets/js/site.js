@@ -164,19 +164,18 @@ function renderLegend(){
 }
 
 function renderGraph(){
-  const container = document.getElementById('graph');
-  const summary = document.getElementById('graph-summary');
-  const select = document.getElementById('graph-domain-select');
-  const detail = document.getElementById('graph-detail');
-  if(!window.cytoscape || !relations.length){
-    container.innerHTML = '<p>El grafo crecerá cuando el corpus incorpore relaciones estructuradas.</p>';
+  const overview = document.getElementById('domain-overview');
+  const summary = document.getElementById('relation-summary');
+  const select = document.getElementById('relation-domain-select');
+  const detail = document.getElementById('relation-detail');
+  if(!relations.length){
+    overview.innerHTML = '<p>El índice crecerá cuando el corpus incorpore relaciones estructuradas.</p>';
     return;
   }
   const docsById = new Map(documents.map(doc => [doc.id,doc]));
   const domainCounts = new Map();
   documents.forEach(doc => domainCounts.set(domainOf(doc),(domainCounts.get(domainOf(doc)) || 0) + 1));
   const domainNames = [...domainCounts.keys()].sort((a,b) => domainCounts.get(b) - domainCounts.get(a));
-  const domainIds = new Map(domainNames.map((name,index) => [name,`domain-${index}`]));
   const pairCounts = new Map();
   relations.forEach(rel => {
     const sourceDoc = docsById.get(rel.source);
@@ -186,54 +185,47 @@ function renderGraph(){
     const key = pair.join('||');
     pairCounts.set(key,(pairCounts.get(key) || 0) + 1);
   });
-  const nodes = domainNames.map(name => ({
-    data:{id:domainIds.get(name),label:name,docCount:domainCounts.get(name),domain:name}
-  }));
-  const edges = [...pairCounts.entries()].filter(([key]) => {
-    const [source,target] = key.split('||');
-    return source !== target;
-  }).map(([key,count],index) => {
-    const [source,target] = key.split('||');
-    return {data:{id:`domain-relation-${index}`,source:domainIds.get(source),target:domainIds.get(target),count}};
-  });
   summary.textContent = `${relations.length} relaciones · ${domainNames.length} ámbitos`;
   select.innerHTML = domainNames.map(name => `<option value="${escapeHtml(name)}">${escapeHtml(name)} · ${domainCounts.get(name)} lecturas</option>`).join('');
+  const domainRelationCounts = domain => {
+    let internal = 0;
+    const external = [];
+    pairCounts.forEach((count,key) => {
+      const [source,target] = key.split('||');
+      if(source === domain && target === domain) internal += count;
+      else if(source === domain) external.push({domain:target,count});
+      else if(target === domain) external.push({domain:source,count});
+    });
+    return {internal,external:external.sort((a,b) => b.count - a.count)};
+  };
+  overview.innerHTML = domainNames.map(name => {
+    const counts = domainRelationCounts(name);
+    const externalTotal = counts.external.reduce((total,item) => total + item.count,0);
+    return `<button type="button" class="domain-card" data-domain="${escapeHtml(name)}">
+      <span>${escapeHtml(name)}</span>
+      <strong>${domainCounts.get(name)} <small>lecturas</small></strong>
+      <em>${externalTotal} externas · ${counts.internal} internas</em>
+    </button>`;
+  }).join('');
   const renderDomainDetail = domain => {
     const domainDocs = documents.filter(doc => domainOf(doc) === domain).slice(0,4);
+    const counts = domainRelationCounts(domain);
     detail.innerHTML = `
-      <div><small>Ámbito seleccionado</small><strong>${escapeHtml(domain)}</strong></div>
-      <div class="graph-reading-list">${domainDocs.map(doc => `<button type="button" data-id="${escapeHtml(doc.id)}">${escapeHtml(doc.title)} <span>→</span></button>`).join('')}</div>`;
+      <div class="relation-detail-heading"><small>Ámbito seleccionado</small><strong>${escapeHtml(domain)}</strong></div>
+      <div class="relation-connections"><small>Conexiones principales</small>${counts.external.length
+        ? counts.external.map(item => `<span>${escapeHtml(item.domain)} <b>${item.count}</b></span>`).join('')
+        : '<span>Sin conexiones externas declaradas</span>'}</div>
+      <div class="relation-reading-list"><small>Lecturas para comenzar</small>${domainDocs.map(doc => `<button type="button" data-id="${escapeHtml(doc.id)}">${escapeHtml(doc.title)} <span>→</span></button>`).join('')}</div>`;
     detail.querySelectorAll('button').forEach(button => button.addEventListener('click',() => {
       openReader(documents.find(doc => doc.id === button.dataset.id));
     }));
   };
-  const cy = cytoscape({
-    container,
-    elements:[...nodes,...edges],
-    style:[
-      {selector:'node',style:{
-        'label':'data(label)','background-color':'#173f5f','color':'#ffffff',
-        'font-family':'DM Sans','font-size':9,'font-weight':600,'text-wrap':'wrap','text-max-width':62,
-        'text-valign':'center','text-halign':'center',
-        'width':'mapData(docCount,1,21,56,82)','height':'mapData(docCount,1,21,56,82)',
-        'border-width':3,'border-color':'#ffffff'
-      }},
-      {selector:'edge',style:{
-        'width':'mapData(count,1,16,1,4)','line-color':'#9fb1bf','curve-style':'bezier','opacity':.52
-      }},
-      {selector:'node:selected',style:{'background-color':'#9a7430','border-color':'#eadfc8'}}
-    ],
-    layout:{name:'circle',animate:false,fit:true,padding:82,avoidOverlap:true,startAngle:-Math.PI/2}
-  });
-  cy.on('tap','node',event => {
-    const domain = event.target.data('domain');
-    select.value = domain;
-    renderDomainDetail(domain);
-  });
+  overview.querySelectorAll('.domain-card').forEach(button => button.addEventListener('click',() => {
+    select.value = button.dataset.domain;
+    select.dispatchEvent(new Event('change'));
+  }));
   select.addEventListener('change',() => {
-    const node = cy.getElementById(domainIds.get(select.value));
-    cy.elements().unselect();
-    node.select();
+    overview.querySelectorAll('.domain-card').forEach(button => button.classList.toggle('active',button.dataset.domain === select.value));
     renderDomainDetail(select.value);
   });
   select.dispatchEvent(new Event('change'));
