@@ -19,3 +19,5 @@ jobs:
         run: |
           test -s site-data/content.json
           test -f site-data/relations.json
+      - name: Check browser JavaScript syntax
+        run: node --check assets/js/site.js
