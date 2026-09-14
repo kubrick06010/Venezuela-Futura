@@ -99,10 +99,21 @@
       <div class="relation-copy">
         <p class="eyebrow">Relaciones del conocimiento</p>
         <h2>Ideas que ganan sentido cuando se conectan.</h2>
-        <p>El grafo diferencia relaciones documentadas, interpretativas e inferidas. Cada nodo conduce a su lectura de origen.</p>
+        <p>El índice distingue ámbitos, conexiones y procedencia. Cada lectura conserva su lugar dentro del corpus y sus relaciones documentadas.</p>
         <div id="legend" class="legend"></div>
       </div>
-      <div id="graph" class="graph" aria-label="Grafo interactivo del corpus"></div>
+      <div class="relation-index-shell">
+        <div class="relation-index-toolbar">
+          <span>Índice relacional por ámbito</span>
+          <strong id="relation-summary"></strong>
+        </div>
+        <div id="domain-overview" class="domain-overview" aria-label="Resumen de ámbitos del corpus"></div>
+        <div class="relation-index-controls">
+          <label for="relation-domain-select">Examinar un ámbito</label>
+          <select id="relation-domain-select"></select>
+        </div>
+        <div id="relation-detail" class="relation-detail" aria-live="polite"></div>
+      </div>
     </section>
 
     <section id="explorar" class="section corpus-section">
@@ -156,7 +167,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
-  <script src="https://unpkg.com/cytoscape@3.28.1/dist/cytoscape.min.js"></script>
   <script src="assets/js/site.js"></script>
 </body>
 </html>

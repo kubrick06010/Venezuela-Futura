@@ -164,43 +164,71 @@ function renderLegend(){
 }
 
 function renderGraph(){
-  const container = document.getElementById('graph');
-  if(!window.cytoscape || !relations.length){
-    container.innerHTML = '<p>El grafo crecerá cuando el corpus incorpore relaciones estructuradas.</p>';
+  const overview = document.getElementById('domain-overview');
+  const summary = document.getElementById('relation-summary');
+  const select = document.getElementById('relation-domain-select');
+  const detail = document.getElementById('relation-detail');
+  if(!relations.length){
+    overview.innerHTML = '<p>El índice crecerá cuando el corpus incorpore relaciones estructuradas.</p>';
     return;
   }
-  const ids = new Set(relations.flatMap(rel => [rel.source,rel.target]));
-  const nodes = documents.filter(doc => ids.has(doc.id)).map(doc => ({
-    data:{id:doc.id,label:doc.title,path:doc.path,domain:domainOf(doc)}
-  }));
-  const edges = relations.map((rel,index) => ({
-    data:{id:`r${index}`,source:rel.source,target:rel.target,confidence:rel.confidence||'sin-clasificar'}
-  }));
-  const cy = cytoscape({
-    container,
-    elements:[...nodes,...edges],
-    style:[
-      {selector:'node',style:{
-        'label':'data(label)','background-color':'#486f8d','color':'#102a43',
-        'font-family':'DM Sans','font-size':10,'text-wrap':'wrap','text-max-width':100,
-        'text-valign':'bottom','text-margin-y':8,'width':18,'height':18,
-        'border-width':2,'border-color':'#ffffff'
-      }},
-      {selector:'node[domain="Instituciones"]',style:{'background-color':'#9a7430','width':24,'height':24}},
-      {selector:'node[domain="Capacidades"]',style:{'background-color':'#315f7d','width':22,'height':22}},
-      {selector:'edge',style:{
-        'width':1,'line-color':'#aebdca','curve-style':'bezier','opacity':.62
-      }},
-      {selector:'edge[confidence="interpretativa"]',style:{'line-style':'dashed','opacity':.5}},
-      {selector:'edge[confidence="inferida"]',style:{'line-style':'dotted','opacity':.4}},
-      {selector:':selected',style:{'background-color':'#9a7430','line-color':'#9a7430'}}
-    ],
-    layout:{name:'cose',animate:false,fit:true,padding:44,nodeRepulsion:9500,idealEdgeLength:110}
+  const docsById = new Map(documents.map(doc => [doc.id,doc]));
+  const domainCounts = new Map();
+  documents.forEach(doc => domainCounts.set(domainOf(doc),(domainCounts.get(domainOf(doc)) || 0) + 1));
+  const domainNames = [...domainCounts.keys()].sort((a,b) => domainCounts.get(b) - domainCounts.get(a));
+  const pairCounts = new Map();
+  relations.forEach(rel => {
+    const sourceDoc = docsById.get(rel.source);
+    const targetDoc = docsById.get(rel.target);
+    if(!sourceDoc || !targetDoc) return;
+    const pair = [domainOf(sourceDoc),domainOf(targetDoc)].sort();
+    const key = pair.join('||');
+    pairCounts.set(key,(pairCounts.get(key) || 0) + 1);
   });
-  cy.on('tap','node',event => {
-    const doc = documents.find(item => item.id === event.target.id());
-    openReader(doc);
+  summary.textContent = `${relations.length} relaciones · ${domainNames.length} ámbitos`;
+  select.innerHTML = domainNames.map(name => `<option value="${escapeHtml(name)}">${escapeHtml(name)} · ${domainCounts.get(name)} lecturas</option>`).join('');
+  const domainRelationCounts = domain => {
+    let internal = 0;
+    const external = [];
+    pairCounts.forEach((count,key) => {
+      const [source,target] = key.split('||');
+      if(source === domain && target === domain) internal += count;
+      else if(source === domain) external.push({domain:target,count});
+      else if(target === domain) external.push({domain:source,count});
+    });
+    return {internal,external:external.sort((a,b) => b.count - a.count)};
+  };
+  overview.innerHTML = domainNames.map(name => {
+    const counts = domainRelationCounts(name);
+    const externalTotal = counts.external.reduce((total,item) => total + item.count,0);
+    return `<button type="button" class="domain-card" data-domain="${escapeHtml(name)}">
+      <span>${escapeHtml(name)}</span>
+      <strong>${domainCounts.get(name)} <small>lecturas</small></strong>
+      <em>${externalTotal} externas · ${counts.internal} internas</em>
+    </button>`;
+  }).join('');
+  const renderDomainDetail = domain => {
+    const domainDocs = documents.filter(doc => domainOf(doc) === domain).slice(0,4);
+    const counts = domainRelationCounts(domain);
+    detail.innerHTML = `
+      <div class="relation-detail-heading"><small>Ámbito seleccionado</small><strong>${escapeHtml(domain)}</strong></div>
+      <div class="relation-connections"><small>Conexiones principales</small>${counts.external.length
+        ? counts.external.map(item => `<span>${escapeHtml(item.domain)} <b>${item.count}</b></span>`).join('')
+        : '<span>Sin conexiones externas declaradas</span>'}</div>
+      <div class="relation-reading-list"><small>Lecturas para comenzar</small>${domainDocs.map(doc => `<button type="button" data-id="${escapeHtml(doc.id)}">${escapeHtml(doc.title)} <span>→</span></button>`).join('')}</div>`;
+    detail.querySelectorAll('button').forEach(button => button.addEventListener('click',() => {
+      openReader(documents.find(doc => doc.id === button.dataset.id));
+    }));
+  };
+  overview.querySelectorAll('.domain-card').forEach(button => button.addEventListener('click',() => {
+    select.value = button.dataset.domain;
+    select.dispatchEvent(new Event('change'));
+  }));
+  select.addEventListener('change',() => {
+    overview.querySelectorAll('.domain-card').forEach(button => button.classList.toggle('active',button.dataset.domain === select.value));
+    renderDomainDetail(select.value);
   });
+  select.dispatchEvent(new Event('change'));
 }
 
 function buildToc(){
@@ -269,7 +297,7 @@ function closeReader(){
   reader.setAttribute('inert','');
   document.getElementById('reader-backdrop').classList.remove('open');
   document.body.classList.remove('reader-open');
-  history.replaceState(null,'',location.pathname + location.hash);
+  history.replaceState(null,'',location.pathname);
   if(readerReturnFocus?.isConnected) readerReturnFocus.focus();
 }
 
