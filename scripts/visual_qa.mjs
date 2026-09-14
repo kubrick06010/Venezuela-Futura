@@ -23,8 +23,8 @@ await desktop.screenshot({path:`${output}/01-home-desktop.png`,fullPage:false});
 const relationSection = desktop.locator('#relaciones');
 await relationSection.scrollIntoViewIfNeeded();
 await desktop.waitForTimeout(300);
-const graphNodes = await desktop.locator('#graph canvas').count();
-if(!graphNodes) throw new Error('Relations visualization did not render');
+const domainCards = await desktop.locator('#domain-overview .domain-card').count();
+if(domainCards < 2) throw new Error('Relations index did not render');
 await relationSection.screenshot({path:`${output}/02-relations-desktop.png`});
 
 await desktop.locator('.route').first().click();
