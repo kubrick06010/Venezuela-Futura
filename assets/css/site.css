@@ -176,7 +176,7 @@ footer span{color:#bdcbd7}
 @media(max-width:720px){
   :root{--header:92px}.nav-shell{min-height:64px;padding:0 16px}.brand strong{font-size:1.4rem}.brand span{font-size:.48rem}.search-trigger{padding-left:14px;font-size:0}.search-trigger kbd{font-size:.8rem}
   .status-line{padding:0 16px;font-size:.55rem;justify-content:flex-start}.status-line span:nth-child(2){display:none}
-  .hero,.section{padding-left:20px;padding-right:20px}h1{font-size:clamp(2.65rem,13vw,3.15rem)}.hero{min-height:auto}.flow-heading{display:block}.flow-heading>p{display:none}.flow-visual{min-height:330px}
+  .hero,.section{padding-left:20px;padding-right:20px}h1{font-size:2.85rem}.hero{min-height:auto}.hero-actions{display:grid;gap:14px}.primary-button{min-width:0;width:100%}.text-link{justify-self:start}.flow-heading{display:block}.flow-heading>p{display:none}.flow-visual{min-height:330px}
   .flow-label{width:78px}.flow-label strong{font-size:.58rem}.flow-label span{display:none}
   .section-heading{align-items:flex-start}.section-heading>a{display:none}.recent-layout{grid-template-columns:1fr}.featured-reading{border-left:0;border-top:1px solid var(--line);padding:24px 0 0}
   .ledger-row{grid-template-columns:36px 1fr 24px}.ledger-row .domain{display:none}
