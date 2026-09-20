@@ -207,7 +207,47 @@ UNICEF ha documentado además problemas de aprendizaje, pérdida de docentes, re
 
 Cada una debe medirse separadamente.
 
-## 7. Capacidades humanas: la pérdida no se observa sólo contando títulos
+## 7. Alimentación, nutrición y capacidad de aprender
+
+La alimentación no debe tratarse como una variable externa a la educación. La evidencia internacional vincula la nutrición infantil con supervivencia, desarrollo y aprendizaje; el marco de capital humano del Banco Mundial incorpora el retraso del crecimiento como indicador de salud y señala que la malnutrición y la anemia están asociadas con menor aprendizaje y mayor abandono escolar.
+
+Para Venezuela, esta relación requiere especial cuidado metodológico. Que la falta de alimentos aparezca entre las causas de asistencia irregular no permite por sí sola estimar cuánto aprendizaje se pierde por nutrición, ni atribuir a una sola causa resultados educativos que también dependen de docentes, tiempo de clase, salud, servicios, hogar e infraestructura.
+
+La cadena que debe investigarse es más amplia:
+
+```text
+nutrición materna
+      ↓
+primeros años de vida
+      ↓
+desarrollo físico y cognitivo
+      ↓
+alimentación y salud durante la infancia
+      ↓
+asistencia + atención + capacidad de aprender
+      ↓
+aprendizaje efectivo
+      ↓
+formación técnica / universitaria / oficios
+      ↓
+capacidades profesionales futuras
+```
+
+Esto cambia la frontera analítica de la política educativa: parte de las condiciones que permiten aprender se construyen antes de entrar en un aula.
+
+También obliga a evitar una visión reducida del problema como simple provisión de calorías. El Panorama Regional de Seguridad Alimentaria y Nutrición 2025 de FAO, FIDA, OPS, UNICEF y WFP subraya que América Latina y el Caribe enfrenta simultáneamente desnutrición, deficiencias de micronutrientes, anemia, sobrepeso y obesidad. La pregunta pertinente es acceso sostenido a una alimentación asequible, diversa y nutritiva, junto con salud, agua, saneamiento y protección social.
+
+En Venezuela ya existe además una conexión operativa entre alimentación y escuela: WFP utiliza desde 2021 la alimentación escolar como plataforma de intervención y en 2025 reportó asistencia alimentaria, incluidas comidas escolares, en doce estados. Esto es evidencia de una capacidad y experiencia existente; no demuestra todavía cuál debería ser el diseño institucional definitivo de una política nacional.
+
+### Preguntas pendientes
+
+- ¿qué indicadores nutricionales nacionales y territoriales comparables están disponibles para niños, adolescentes y mujeres embarazadas?
+- ¿cómo varían alimentación, asistencia y aprendizaje por territorio y nivel socioeconómico?
+- ¿qué continuidad, calidad nutricional y cobertura efectiva tienen los distintos programas de alimentación escolar?
+- ¿qué parte de la cadena puede apoyarse en producción y compras locales sin comprometer calidad, continuidad o coste?
+- ¿qué capacidades de salud, logística, agua, saneamiento y datos necesita un sistema que quiera proteger el desarrollo infantil de forma sostenida?
+
+## 8. Capacidades humanas: la pérdida no se observa sólo contando títulos
 
 El deterioro educativo actual tendrá efectos acumulativos.
 
@@ -243,7 +283,7 @@ Para Venezuela Futura será necesario medir, cuando existan datos:
 - operadores de infraestructura;
 - capacidad gerencial y organizacional.
 
-## 8. Diáspora: parte de la estructura nacional
+## 9. Diáspora: parte de la estructura nacional
 
 ACNUR reporta **casi 7,9 millones de refugiados y migrantes venezolanos en el mundo**, de los cuales más de 6,9 millones están en América Latina y el Caribe. El dato está actualizado a diciembre de 2025.
 
@@ -273,7 +313,7 @@ Es también:
 
 > **¿Cómo puede Venezuela relacionarse productivamente con millones de venezolanos que quizá nunca regresen de forma permanente?**
 
-## 9. Una paradoja central: menos población, pero capacidades aún infrautilizadas
+## 10. Una paradoja central: menos población, pero capacidades aún infrautilizadas
 
 El país simultáneamente presenta:
 
@@ -297,7 +337,23 @@ capacidad que nunca llegó a formarse
 capacidad nueva que surgió durante la crisis
 ```
 
-## 10. Interacciones que la foto ya permite ver
+## 11. Interacciones que la foto ya permite ver
+
+### Nutrición → aprendizaje → capacidad futura
+
+```text
+malnutrición / inseguridad alimentaria
+        ↓
+riesgos para desarrollo, salud y asistencia
+        ↓
+menor capacidad efectiva de aprender
+        ↓
+menores competencias acumuladas
+        ↓
+riesgo para capacidades profesionales futuras
+```
+
+Esta cadena expresa mecanismos plausibles respaldados por evidencia internacional; no constituye una estimación causal específica para Venezuela.
 
 ### Educación → trabajo → pobreza
 
@@ -355,7 +411,7 @@ inactividad / autoempleo / informalidad
 
 Esta última relación debe investigarse empíricamente: no toda inactividad es ausencia de voluntad de trabajar; puede ser respuesta racional a una estructura de costes e incentivos.
 
-## 11. Qué no sabemos suficientemente bien
+## 12. Qué no sabemos suficientemente bien
 
 Todavía necesitamos mejores datos sobre:
 
@@ -363,6 +419,7 @@ Todavía necesitamos mejores datos sobre:
 - retorno migratorio real;
 - perfiles ocupacionales de la diáspora;
 - competencias efectivas de estudiantes;
+- indicadores nutricionales infantiles comparables y territorializados;
 - demanda empresarial por especialidad;
 - stock de técnicos y oficios;
 - productividad laboral por sector;
@@ -388,12 +445,15 @@ Podría ser más útil pensar en:
 
 > **la comunidad humana venezolana: quienes viven en el territorio, quienes viven fuera y las capacidades que conectan a ambos.**
 
-## Fuentes principales de esta primera versión
+## Fuentes principales de esta versión
 
 - ENCOVI 2025, Instituto de Investigaciones Económicas y Sociales, Universidad Católica Andrés Bello. Presentada en mayo de 2026; levantamiento marzo–junio de 2025.
 - PolítiKa UCAB, síntesis de resultados ENCOVI 2025.
 - Presentación ENCOVI 2025 alojada por El Ucabista / UCAB.
 - ACNUR, Venezuela Situation, actualización diciembre de 2025.
 - UNICEF Venezuela, informes de situación 2024–2025.
+- Banco Mundial, *Investment Framework for Nutrition 2024*, marco sobre nutrición y capital humano.
+- FAO, FIDA, OPS, UNICEF y WFP, *Panorama Regional de la Seguridad Alimentaria y la Nutrición 2025: Estadísticas y Tendencias*, publicado en 2026.
+- World Food Programme, Venezuela: programa de alimentación escolar y respuesta alimentaria 2021–2026.
 
 Las cifras deberán enlazarse progresivamente a archivos o datasets primarios cuando estén disponibles.
