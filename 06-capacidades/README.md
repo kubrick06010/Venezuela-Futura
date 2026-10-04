@@ -213,6 +213,30 @@ Antes de calificar una iniciativa como proyecto movilizador deberían investigar
 
 El objetivo es que una futura cartera nacional sea consecuencia de necesidades, capacidades, restricciones y alternativas comparadas; no del atractivo político de construir obras grandes.
 
+## Construir crea una obligación de sostener
+
+Un activo de larga vida no termina cuando se inaugura. La evidencia comparada sobre gobernanza de infraestructura recomienda gestionar el ciclo completo: planificación, construcción, operación, mantenimiento y fin de vida.
+
+> **Una obra no es sólo CAPEX presente; crea necesidades futuras de operación, mantenimiento, renovación y eventualmente retiro.**
+
+Por tanto, una opción debe evaluarse también por el servicio que puede sostener durante décadas, las competencias que exige, sus costes de ciclo de vida y la capacidad institucional para conocer su condición y desempeño. Mantener, rehabilitar, sustituir o retirar son alternativas que deben compararse según servicio, riesgo, coste, impactos territoriales y derechos.
+
+## Planificar sin fingir que conocemos el futuro
+
+Los horizontes largos aumentan la incertidumbre. Una hoja de ruta no debería convertir una previsión única en destino. Conviene investigar diseños adaptativos que preserven opciones: dividir decisiones cuando sea posible, establecer hitos de revisión y conservar la capacidad de ampliar, modificar, esperar o abandonar una alternativa cuando cambie la evidencia.
+
+La cancelabilidad no es fracaso por definición. Puede ser valiosa cuando evita encadenar a generaciones futuras a costes hundidos o supuestos que dejaron de cumplirse. Tampoco debe convertirse en inestabilidad permanente: criterios de revisión, responsabilidades y umbrales deben ser públicos y compatibles con continuidad institucional y control democrático.
+
+## La diáspora como capacidad distribuida
+
+La emigración puede reducir capacidades disponibles dentro del territorio y, simultáneamente, crear redes profesionales y conocimiento distribuido fuera de él. Ambas cosas pueden ser ciertas a la vez.
+
+La evidencia internacional documenta mecanismos de transferencia de conocimiento, mentoría, redes científicas y profesionales, inversión y movilidad temporal o virtual. Para Venezuela esto sugiere una pregunta más precisa que «¿cómo hacer que regresen?»:
+
+> **¿Qué capacidades existen dentro y fuera del país, qué necesidades concretas podrían atender y qué vínculos voluntarios permitirían conectarlas sin exigir retorno, exclusividad identitaria ni adhesión política?**
+
+Una futura cartografía de capacidades debería distinguir residencia, competencia, experiencia, disponibilidad e interés, y conectarse con brechas verificadas de instituciones y proyectos. La diáspora no es homogénea ni un recurso que el Estado pueda reclamar: cualquier participación debe ser voluntaria y compatible con la integración plena y los derechos de las personas en sus sociedades de residencia.
+
 ## La pregunta central descompuesta
 
 ```text
@@ -235,11 +259,15 @@ mejorar → investigación + aprendizaje + evaluación
 - estudiar backcasting, escenarios y revisión periódica como alternativas a una predicción única del futuro;
 - estimar qué datos serían necesarios para conectar demografía y territorio con agua, energía, alimentos, materiales y profesionales;
 - estudiar programas nacionales y multinacionales exitosos y fallidos, incluyendo costes de oportunidad, sobrecostes, mantenimiento y capacidad residual;
-- distinguir qué capacidades conviene desarrollar nacionalmente, cuáles compartir regionalmente y cuáles adquirir en mercados internacionales.
+- distinguir qué capacidades conviene desarrollar nacionalmente, cuáles compartir regionalmente y cuáles adquirir en mercados internacionales;
+- desarrollar una metodología para conectar cartera futura, activos, tareas y competencias sin confundir títulos con capacidad demostrada;
+- estudiar cómo inventariar capacidades de la diáspora de forma voluntaria, respetuosa de privacidad y orientada a necesidades concretas, antes de diseñar programas de vinculación.
 
 ## Fuentes comparativas iniciales
 
 - República Popular China, *15th Five-Year Plan for National Economic and Social Development (2026–2030)*, aprobado en marzo de 2026; se usa como caso comparativo de encadenamiento entre horizonte quinquenal y objetivos 2035, no como modelo político.
 - NASA, Academy of Program/Project & Engineering Leadership (APPEL Knowledge Services) y Systems and Engineering Leadership Program (SELP), sobre gestión de programas, ingeniería de sistemas, formación y conservación de conocimiento organizacional.
+- OECD, *Management of assets throughout their life cycle* (2026), sobre desempeño, responsabilidades, competencias y costes de los activos desde planificación hasta fin de vida.
+- OIM, *World Migration Report 2026*, y OECD, *Connecting with Emigrants*, como referencias comparativas sobre transferencia de conocimiento, redes y heterogeneidad de las diásporas.
 
 Estas referencias identifican mecanismos para estudiar. No constituyen por sí mismas recomendaciones de diseño institucional para Venezuela.
