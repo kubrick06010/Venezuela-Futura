@@ -127,6 +127,24 @@ redundancia
 
 Una infraestructura sana debe poder absorber sequía, terremoto, inundación, fallo técnico, incendio, error humano, pico de demanda o interrupciones externas sin colapsar completamente.
 
+### De activos aislados a sistemas interdependientes
+
+La resiliencia no puede estudiarse activo por activo. Agua, electricidad, telecomunicaciones, transporte, salud y saneamiento dependen entre sí; una interrupción puede propagarse y convertirse en un fallo en cascada. UNDRR recomienda evaluar tanto activos como interdependencias y continuidad de servicios.
+
+Esto cambia la unidad de análisis:
+
+```text
+activo → servicio → dependencias → usuarios → consecuencias de interrupción
+```
+
+Una estación de bombeo puede estar físicamente disponible y aun así no prestar servicio si falla la energía, un insumo, la comunicación, el acceso vial o la capacidad humana necesaria para operarla.
+
+### Holgura como tiempo para responder
+
+Reservas, redundancia, inventarios críticos, contratos alternativos, capacidad regional y personal entrenado no son necesariamente «ineficiencias». Bajo incertidumbre pueden comprar tiempo para diagnosticar, reparar, movilizar ayuda o adaptar la operación.
+
+Pero más reserva no siempre es mejor: inmoviliza recursos y puede degradarse o quedar obsoleta. La pregunta investigable es qué holgura necesita cada servicio según probabilidad de fallo, tiempo de reposición, consecuencias sociales y alternativas disponibles. La prioridad debe ser continuidad del servicio y protección de las personas, especialmente de quienes sufrirían más una interrupción.
+
 ## Qué medir
 
 No basta con porcentaje de población "conectada".
@@ -142,6 +160,8 @@ Para agua:
 - tiempo de reparación;
 - pérdidas;
 - resiliencia.
+
+Para todos los sistemas conviene medir también dependencias críticas, tiempo de autonomía ante interrupciones y tiempo de recuperación.
 
 Para electricidad:
 
