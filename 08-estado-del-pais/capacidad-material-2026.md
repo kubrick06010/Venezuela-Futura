@@ -30,6 +30,8 @@ Esto describe recuperación desde una base deprimida, no normalización estructu
 
 El doble sismo del 24 de junio introdujo además un shock patrimonial extraordinario. El PNUD estimó preliminarmente daños directos cercanos a USD 6.700 millones y subrayó que reconstrucción y crecimiento del PIB no son equivalentes: reconstruir activos destruidos puede aumentar actividad económica mientras el patrimonio nacional sigue habiendo sufrido una pérdida.
 
+**Actualización documental (2026-10-05):** la [evaluación postdesastre comunicada por PNUD el 15 de septiembre](https://www.undp.org/es/venezuela/noticias/evaluacion-post-desastre-estima-usd-21000-millones-las-necesidades-de-recuperacion-tras-los-terremotos-en-venezuela) distingue daños y pérdidas de necesidades de recuperación. No debe interpretarse como una cifra directamente comparable a los daños directos preliminares de agosto. Antes de dimensionar inversiones debe recuperarse su desglose sectorial; la [auditoría de evidencia](../sources/auditoria-evidencia-2026-10-05.md) conserva las categorías y preguntas pendientes.
+
 ### Distinción necesaria
 
 ```text
@@ -166,6 +168,8 @@ DataReportal, utilizando datos disponibles principalmente a finales de 2025, est
 - velocidad mediana de Internet fijo de 92,09 Mbps.
 
 Las velocidades habían aumentado fuertemente durante el año previo, especialmente en conexiones fijas.
+
+**Comparabilidad pendiente (2026-10-05):** la [foto general](foto-2026.md) utiliza 77% de usuarios de Internet según Banco Mundial/ITU para 2024. La diferencia con DataReportal/Kepios no demuestra una caída: deben conservarse ambas referencias y contrastarse métodos, fechas y revisiones antes de construir una serie o un denominador común.
 
 Esto sugiere un caso que merece estudio separado: en medio del deterioro de muchas redes públicas, segmentos de telecomunicaciones han mostrado expansión y modernización.
 
