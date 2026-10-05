@@ -179,3 +179,28 @@ Una carretera existente puede ser intransitable. Una escuela abierta puede carec
 Por eso:
 
 > **La existencia física de un activo no demuestra que el servicio exista.**
+
+## Primera prueba: un circuito de servicio
+
+**Propuesta de investigación, todavía no ejecutada.** Antes de ampliar el inventario nacional, proponemos estudiar un circuito de abastecimiento de agua que conecte hogares, una escuela y un centro de salud. Su selección dependerá del acceso a datos, la vulnerabilidad y la posibilidad de seguimiento; no sería una muestra representativa del país.
+
+La unidad de observación será **servicio, territorio funcional y periodo**: una red puede atravesar límites municipales y prestar servicios muy distintos según el día o la estación. Cada dato deberá conservar definición, unidad, fecha, fuente, cobertura y condición de observado, estimado o supuesto. La referencia del [Programa Conjunto OMS/UNICEF de Monitoreo (JMP)](https://washdata.org/topics/drinking-water) distingue agua gestionada de forma segura por su accesibilidad en el predio, disponibilidad cuando se necesita y ausencia de contaminación. Esa definición orienta la medición; no convierte una inspección local en una estimación nacional.
+
+El registro mínimo propuesto conectará:
+
+| Registro | Pregunta que permite investigar |
+|---|---|
+| Caudal, almacenamiento, pérdidas físicas, continuidad y calidad del agua | ¿Qué llega efectivamente a cada grupo de usuarios y cuándo? |
+| Cortes eléctricos, insumos, acceso vial y bitácora de operación, con fechas compatibles | ¿Qué restricciones coinciden y cuál impide recuperar el servicio? |
+| Condición de activos, tareas pendientes, repuestos y tiempos de reparación | ¿Conviene mantener, rehabilitar, sustituir o cambiar la forma de prestar el servicio? |
+| Horas de trabajo por tarea, competencia demostrada, supervisión y disponibilidad por turno | ¿Qué capacidad humana falta realmente, más allá del número de títulos? |
+| Caja del operador, costes domésticos, transferencias públicas, importaciones y reposición | ¿Quién paga, con qué recursos y durante cuánto tiempo puede sostenerse la opción? |
+| Días operativos de escuela y centro sanitario, tiempo de acopio y experiencias de los hogares | ¿Qué cambia en la vida cotidiana y cómo se distribuye? |
+
+Los fallos conjuntos deben observarse: no basta con multiplicar porcentajes separados de disponibilidad de agua, energía y personal como si fueran independientes. Tampoco una mejora posterior permite atribuir por sí sola cambios sanitarios o educativos al agua; deberán registrarse otras intervenciones, estacionalidad y límites de la comparación.
+
+El balance financiero no termina en el operador. Debe distinguir costes económicos, caja, asequibilidad doméstica, compromisos fiscales nacionales y disponibilidad de divisas para insumos y reposición. Una transferencia resuelve caja sólo si puede sostenerse; no elimina el coste para el país. El balance físico debe incluir captación, consumo, pérdidas y aguas residuales, además de efectos sobre cuencas, ecosistemas y otras comunidades. Aumentar el abastecimiento sin saneamiento puede trasladar el daño aguas abajo.
+
+Llamamos **vida disponible**, como concepto de trabajo, al dinero, tiempo, atención, seguridad y acceso efectivo a derechos que las personas pueden ejercer. Se estudiará mediante medidas separadas y relatos contrastables, desagregados cuando sea viable y respetando la privacidad. El tiempo liberado puede destinarse al descanso o al cuidado: no debe convertirse automáticamente en una estimación de productividad o aprendizaje.
+
+El piloto deberá comparar también riesgos del éxito: mayor consumo, nuevas demandas sobre el saneamiento o beneficios concentrados en quienes ya pueden pagar almacenamiento y respaldo. Su resultado esperado es identificar qué datos y capacidades permiten decidir mejor, no justificar de antemano una tecnología, una obra o un modelo de gestión.
