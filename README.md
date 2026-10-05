@@ -106,3 +106,5 @@ Venezuela Futura tampoco debe presentar a los venezolanos como portadores de ras
 ## Estado actual
 
 Este repositorio está en fase fundacional. Muchos documentos contienen hipótesis de trabajo y preguntas que requieren investigación adicional. Las afirmaciones históricas y empíricas deberán progresivamente enlazarse a fuentes primarias o secundarias de alta calidad.
+
+La [revisión del 5 de octubre de 2026](sources/gap-map-y-backlog-2026-10-05.md) reconstruye la arquitectura actual, prioriza huecos y propone un backlog trazable. Incluye una [auditoría selectiva de evidencia](sources/auditoria-evidencia-2026-10-05.md) y se conecta con el [método provisional de revisión adaptativa](11-hojas-de-ruta/metodo-de-revision-adaptativa.md). Son instrumentos de investigación sujetos a contraste; no una cartera de obras ni conclusiones nacionales definitivas.
