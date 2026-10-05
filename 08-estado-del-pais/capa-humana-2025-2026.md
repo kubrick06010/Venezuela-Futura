@@ -207,6 +207,8 @@ UNICEF ha documentado además problemas de aprendizaje, pérdida de docentes, re
 
 Cada una debe medirse separadamente.
 
+La [síntesis institucional de ENCOVI 2025](https://politikaucab.net/2026/05/08/encovi-2025-685-de-los-hogares-del-pais-se-encuentran-en-pobreza-monetaria-y-317-en-pobreza-extrema/) permite identificar problemas, pero convertir sus porcentajes en necesidades de atención exige verificar en el cuestionario y la ficha técnica el universo, los filtros, las ponderaciones y la precisión de cada estimación. Población escolarizada, beneficiarios del PAE y receptores diarios no son denominadores intercambiables. Tampoco deben sumarse motivos de inasistencia como si fueran mutuamente excluyentes, ni suponerse representatividad municipal a partir del tamaño de la muestra nacional.
+
 ## 7. Alimentación, nutrición y capacidad de aprender
 
 La alimentación no debe tratarse como una variable externa a la educación. La evidencia internacional vincula la nutrición infantil con supervivencia, desarrollo y aprendizaje; el marco de capital humano del Banco Mundial incorpora el retraso del crecimiento como indicador de salud y señala que la malnutrición y la anemia están asociadas con menor aprendizaje y mayor abandono escolar.
@@ -246,6 +248,20 @@ En Venezuela ya existe además una conexión operativa entre alimentación y esc
 - ¿qué continuidad, calidad nutricional y cobertura efectiva tienen los distintos programas de alimentación escolar?
 - ¿qué parte de la cadena puede apoyarse en producción y compras locales sin comprometer calidad, continuidad o coste?
 - ¿qué capacidades de salud, logística, agua, saneamiento y datos necesita un sistema que quiera proteger el desarrollo infantil de forma sostenida?
+
+### De la cadena conceptual a una investigación por cohortes
+
+**Propuesta metodológica, todavía no estimación para Venezuela.** Conviene distinguir cohortes de nacimiento y territorios, y estudiar conjuntamente nutrición, salud, cuidados, oportunidades de aprendizaje y continuidad escolar. El [marco de cuidado cariñoso y sensible de OMS, UNICEF y Banco Mundial](https://www.who.int/publications/i/item/9789241514064/) incorpora cuidado responsivo —la respuesta atenta a las necesidades del niño—, seguridad y aprendizaje temprano junto con salud y nutrición. La cadena anterior debe leerse como una selección de mecanismos, no como una explicación exhaustiva ni un destino individual inevitable.
+
+Los estudios originales ilustran por qué importa esa distinción: el [seguimiento de una intervención de estimulación en Jamaica](https://pmc.ncbi.nlm.nih.gov/articles/PMC4574862/) y el [seguimiento de suplementación nutricional temprana en Guatemala](https://pubmed.ncbi.nlm.nih.gov/18242415/) estudian intervenciones, poblaciones y resultados diferentes. Sus hallazgos ayudan a formular preguntas; no proporcionan coeficientes directamente transferibles a Venezuela ni prueban que alimentar, por sí solo, garantice aprendizaje o capacidades profesionales futuras.
+
+Una primera investigación podría preguntar:
+
+- ¿qué restricciones coinciden en los mismos niños y hogares: alimentación, salud, tiempo de cuidados, agua, transporte, disponibilidad docente y horas efectivas de enseñanza?
+- ¿qué combinación de apoyos permite sostener asistencia y mejorar aprendizaje, y para quiénes no funciona?
+- ¿qué necesidades de recuperación tienen las cohortes que ya superaron la primera infancia, sin presumir que sus posibilidades estén cerradas?
+
+Un panel centinela de escuelas y hogares, con mediciones repetidas y protección de datos, permitiría explorar estos mecanismos antes de intentar una estimación nacional. Tendría que incluir una estrategia específica para niños fuera de la escuela y hogares sin conectividad. Las diferencias observadas serían inicialmente descriptivas: atribuir efectos a una intervención requeriría un diseño de evaluación adecuado. Los registros de atención humanitaria, las encuestas de hogares y las pruebas escolares tampoco pueden enlazarse ni extrapolarse automáticamente; primero deben comprobarse población cubierta, fechas, definiciones y condiciones de acceso.
 
 ## 8. Capacidades humanas: la pérdida no se observa sólo contando títulos
 
