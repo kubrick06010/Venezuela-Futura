@@ -179,3 +179,14 @@ Una carretera existente puede ser intransitable. Una escuela abierta puede carec
 Por eso:
 
 > **La existencia física de un activo no demuestra que el servicio exista.**
+
+
+## Contraste empírico: acceso no equivale a continuidad (ENCOVI 2025)
+
+**Hechos reportados, no mediciones instrumentales.** La ENCOVI 2025 (trabajo de campo de marzo a junio de 2025, presentación de UCAB de mayo de 2026) indica que aproximadamente **78 %** de los hogares declara agua por acueducto, pero el servicio diario se sitúa alrededor de **29 %**, con una categoría de continuidad de **19 %** cuya relación con la anterior requiere conservar las definiciones originales: **no sumar porcentajes sin comprobar denominadores y categorías**. En electricidad, la conexión declarada ronda **98 %**, pero solo alrededor de **10 %** informa suministro ininterrumpido y cerca de cuatro de cada diez hogares reportan apagones diarios.
+
+**Interpretación:** cobertura de conexión y calidad del servicio requieren indicadores separados y desagregación territorial. **Hipótesis pendiente de contrastar:** la combinación de fallos en agua, energía y cuidados podría afectar escolaridad, salud y tiempo disponible; los porcentajes anteriores no prueban esos efectos causales.
+
+**Caso de seguimiento, La Guaira.** UNICEF anunció en septiembre de 2026 la preparación de la rehabilitación de la estación de bombeo de Mamo y la planta de Naiguatá, con inicio previsto para octubre y hasta **250.000 beneficiarios esperados**. Se trata de una **previsión**, no de obra terminada ni de continuidad restaurada verificada. Antes de declarar resultados, documentar ejecución real, calidad y horas de servicio, mantenimiento, repuestos y experiencia de los hogares.
+
+Fuentes: [ENCOVI 2025 / UCAB](https://elucabista.com/2026/05/07/encovi-2025-pobreza-y-desigualdad-disminuyen-en-venezuela-sin-evolucion-del-bienestar-social/), [presentación ENCOVI 2025](https://elucabista.com/wp-content/uploads/2023/01/ENCOVI-2025_presentacion_UCAB-07-05-2026.pdf), [UNICEF, anuncio de La Guaira](https://www.unicef.org/lac/en/press-releases/unicef-and-venezuelan-authorities-begin-rehabilitation-water-systems-la-guaira).
