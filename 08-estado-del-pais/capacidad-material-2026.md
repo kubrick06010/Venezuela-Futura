@@ -28,7 +28,18 @@ El PNUD, en su reporte del primer semestre de 2026, proyectó crecimiento del PI
 
 Esto describe recuperación desde una base deprimida, no normalización estructural.
 
-El doble sismo del 24 de junio introdujo además un shock patrimonial extraordinario. El PNUD estimó preliminarmente daños directos cercanos a USD 6.700 millones y subrayó que reconstrucción y crecimiento del PIB no son equivalentes: reconstruir activos destruidos puede aumentar actividad económica mientras el patrimonio nacional sigue habiendo sufrido una pérdida.
+El doble sismo del 24 de junio introdujo un shock patrimonial extraordinario. Reconstrucción y crecimiento del PIB no son equivalentes: reconstruir activos destruidos puede aumentar la actividad económica sin restituir por sí solo el patrimonio ni el bienestar de las personas.
+
+**Estimaciones preliminares de daño físico directo que no deben promediarse (corte editorial: 18-10-2026):**
+
+- **PNUD / RAPIDA (26-06-2026):** USD **6.700 millones**, con intervalo preliminar de **4.700–8.700 millones**. Estimación rápida satelital y modelada que excluye expresamente daños a infraestructura, disrupción económica y costes de reconstrucción.
+- **Banco Mundial / GFDRR / GRADE (13-07-2026):** USD **19.600 millones** de daños directos a activos físicos: aproximadamente **9.300 millones** residenciales, **5.000 millones** no residenciales y **5.200 millones** en infraestructura (cifras redondeadas).
+
+**Interpretación y límites:** la cobertura, fecha y metodología difieren. La exclusión de infraestructura en RAPIDA explica parte de la brecha, pero no toda: incluso descontando infraestructura, GRADE supera el intervalo RAPIDA. No existe aquí una reconciliación completa de exposición, valoración y vulnerabilidad, ni debe considerarse definitiva la estimación posterior. Daño físico directo, pérdida de actividad, necesidades de recuperación y presupuesto de reconstrucción son categorías distintas. Las proyecciones de reconstrucción a más de diez años dependen de supuestos, no son pronósticos incondicionales.
+
+La decisión pública sobre recuperación debe ponderar vivienda digna, seguridad, servicios, participación de las comunidades, territorio, derechos y futuras generaciones, además del coste.
+
+Fuentes: [PNUD/RAPIDA, 26-06-2026](https://www.undp.org/es/venezuela/comunicados-de-prensa/venezuela-registra-perdidas-economicas-de-usd-6700-millones-por-los-terremotos-segun-estimaciones-del-pnud); [PNUD, reporte macroeconómico, 11-08-2026](https://www.undp.org/es/venezuela/publicaciones/desempeno-macroeconomico-de-venezuela-primer-semestre-de-2026); [Banco Mundial/GFDRR, GRADE, 13-07-2026](https://www.gfdrr.org/sites/default/files/2026-07/GRADE%20Venezuela_ES_SPA_v02_0.pdf).
 
 ### Distinción necesaria
 
